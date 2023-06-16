@@ -1,6 +1,6 @@
 uuid: 2e12f3ee-ce70-4856-910a-04134e1211d4
 langcode: ja
-status: true
+status: false
 dependencies: {  }
 _core:
   default_config_hash: oz6NyPDAB4HB6N9hgH2LwNVtCd-sXbMG1fbn5KsRIDI

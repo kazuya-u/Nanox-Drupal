@@ -3,14 +3,24 @@ langcode: ja
 status: true
 dependencies:
   config:
-    - filter.format.basic_html
+    - filter.format.rich_text
+    - node.type.article
+    - node.type.page
+    - taxonomy.vocabulary.tags
   module:
     - comment
     - contact
+    - contextual
+    - file
     - filter
+    - node
+    - path
     - search
     - shortcut
     - system
+    - taxonomy
+    - toolbar
+    - tour
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
@@ -18,11 +28,34 @@ label: 認証済みユーザー
 weight: 1
 is_admin: false
 permissions:
+  - 'access administration pages'
   - 'access comments'
   - 'access content'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'access toolbar'
+  - 'access tour'
+  - 'administer url aliases'
+  - 'create article content'
+  - 'create page content'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'delete article revisions'
+  - 'delete own article content'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own page content'
+  - 'edit terms in tags'
   - 'post comments'
+  - 'revert all revisions'
   - 'search content'
   - 'skip comment approval'
-  - 'use text format basic_html'
+  - 'use text format rich_text'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'
