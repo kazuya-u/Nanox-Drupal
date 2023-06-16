@@ -1,0 +1,38 @@
+uuid: e348600a-8a97-4fd2-96ff-8465f0c1bd80
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.field.node.form_mode_in_modal.field_body
+    - field.field.node.form_mode_in_modal.field_ref_user
+    - node.type.form_mode_in_modal
+  module:
+    - text
+    - user
+id: node.form_mode_in_modal.default
+targetEntityType: node
+bundle: form_mode_in_modal
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_ref_user:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

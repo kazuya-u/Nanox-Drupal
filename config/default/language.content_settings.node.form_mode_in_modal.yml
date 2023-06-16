@@ -1,0 +1,11 @@
+uuid: 305fcfbb-1a61-472c-8dbd-136f49f07323
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.form_mode_in_modal
+id: node.form_mode_in_modal
+target_entity_type_id: node
+target_bundle: form_mode_in_modal
+default_langcode: site_default
+language_alterable: false

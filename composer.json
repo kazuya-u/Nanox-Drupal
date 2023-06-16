@@ -19,6 +19,11 @@
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
+        "drupal/field_group": "^3.4",
+        "drupal/form_mode_control": "^2.1",
+        "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/token": "^1.11",
+        "drupal/token_filter": "^2.0",
         "drush/drush": "^12.0"
     },
     "conflict": {

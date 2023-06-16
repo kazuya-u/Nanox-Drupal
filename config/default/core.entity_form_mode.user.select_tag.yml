@@ -1,0 +1,10 @@
+uuid: c2c01405-9eae-4325-bd34-10be74db51c0
+langcode: ja
+status: true
+dependencies:
+  module:
+    - user
+id: user.select_tag
+label: ' タグ選択'
+targetEntityType: user
+cache: true
