@@ -21,6 +21,7 @@
         "drupal/core-recommended": "^10.0",
         "drupal/field_group": "^3.4",
         "drupal/form_mode_control": "^2.1",
+        "drupal/inline_entity_form": "^1.0@RC",
         "drush/drush": "^12.0"
     },
     "conflict": {
