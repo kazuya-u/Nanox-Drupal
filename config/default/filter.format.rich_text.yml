@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - editor
+    - token_filter
 name: 'Rich Text'
 format: rich_text
 weight: 0
@@ -32,3 +33,19 @@ filters:
     status: true
     weight: 0
     settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: ''
+      filter_html_help: true
+      filter_html_nofollow: false
+  token_filter:
+    id: token_filter
+    provider: token_filter
+    status: false
+    weight: 0
+    settings:
+      replace_empty: '0'
