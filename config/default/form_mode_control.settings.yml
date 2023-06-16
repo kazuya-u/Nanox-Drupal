@@ -1,0 +1,9 @@
+'use  The form mode default linked to  block_content entity( basic )': block_content.basic.default
+'use  The form mode default linked to  comment entity( comment )': comment.comment.default
+'use  The form mode default linked to  node entity( article )': node.article.default
+'use  The form mode default linked to  node entity( page )': node.page.default
+'use  The form mode default linked to  user entity( user )': user.user.default
+'use  The form mode select_tag linked to  user entity( user )': user.user.select_tag
+'use  The form mode default linked to  node entity( form_mode_in_modal )': node.form_mode_in_modal.default
+creation+administrator+user+user: user.user.default
+modification+administrator+user+user: user.user.select_tag

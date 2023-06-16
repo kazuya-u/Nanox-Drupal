@@ -1,0 +1,30 @@
+uuid: 9a1a6b57-9466-40fb-8dd1-115db0b33a9b
+langcode: ja
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.select_tag
+    - field.field.user.user.field_tag
+    - field.field.user.user.user_picture
+  module:
+    - user
+_core:
+  default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
+id: user.user.select_tag
+targetEntityType: user
+bundle: user
+mode: select_tag
+content:
+  field_tag:
+    type: options_buttons
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  account: true
+  contact: true
+  langcode: true
+  language: true
+  timezone: true
+  user_picture: true
