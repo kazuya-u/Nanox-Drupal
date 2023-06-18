@@ -8,7 +8,6 @@ dependencies:
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
-    - comment
     - contact
     - contextual
     - file
@@ -29,7 +28,6 @@ weight: 1
 is_admin: false
 permissions:
   - 'access administration pages'
-  - 'access comments'
   - 'access content'
   - 'access content overview'
   - 'access contextual links'
@@ -48,13 +46,10 @@ permissions:
   - 'delete own page content'
   - 'delete page revisions'
   - 'edit own article content'
-  - 'edit own comments'
   - 'edit own page content'
   - 'edit terms in tags'
-  - 'post comments'
   - 'revert all revisions'
   - 'search content'
-  - 'skip comment approval'
   - 'use text format rich_text'
   - 'view all revisions'
   - 'view own unpublished content'
