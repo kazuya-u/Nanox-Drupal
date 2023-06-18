@@ -1,0 +1,17 @@
+uuid: cce23b15-affb-408b-b4cd-ef4d45fa467d
+langcode: ja
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Task
+type: task
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

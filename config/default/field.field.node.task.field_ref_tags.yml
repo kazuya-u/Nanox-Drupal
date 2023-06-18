@@ -1,0 +1,29 @@
+uuid: a04f646b-f6f3-4257-b924-d5cbb58af064
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ref_tags
+    - node.type.task
+    - taxonomy.vocabulary.tags
+id: node.task.field_ref_tags
+field_name: field_ref_tags
+entity_type: node
+bundle: task
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

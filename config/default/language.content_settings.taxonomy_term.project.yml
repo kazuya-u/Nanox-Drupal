@@ -1,0 +1,11 @@
+uuid: 1a651476-f178-4cfc-bad1-9255fa365c09
+langcode: ja
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.project
+id: taxonomy_term.project
+target_entity_type_id: taxonomy_term
+target_bundle: project
+default_langcode: site_default
+language_alterable: false

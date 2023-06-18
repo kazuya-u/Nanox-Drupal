@@ -1,0 +1,34 @@
+uuid: e2c84536-d989-4d90-a1ca-6f011e576a36
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.field.node.task.field_ref_project
+    - field.field.node.task.field_ref_tags
+    - node.type.task
+  module:
+    - user
+id: node.task.default
+targetEntityType: node
+bundle: task
+mode: default
+content:
+  field_ref_project:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_ref_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true

@@ -7,3 +7,4 @@
 'use  The form mode default linked to  node entity( form_mode_in_modal )': node.form_mode_in_modal.default
 creation+administrator+user+user: user.user.default
 modification+administrator+user+user: user.user.select_tag
+'use  The form mode default linked to  node entity( task )': node.task.default

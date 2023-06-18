@@ -1,0 +1,8 @@
+uuid: 82aa7373-3d9b-406f-a2a1-02ead1ba4290
+langcode: ja
+status: true
+dependencies: {  }
+name: プロジェクト
+vid: project
+description: ''
+weight: 0
