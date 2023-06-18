@@ -1,0 +1,22 @@
+uuid: 84f979f7-3e8c-4d4b-a3d3-c5801677fedc
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.task
+id: node.task.promote
+field_name: promote
+entity_type: node
+bundle: task
+label: フロントページへ掲載
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: オン
+  off_label: オフ
+field_type: boolean
