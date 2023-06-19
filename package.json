@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "scripts": {
+    "build-css": "postcss themes/custom/[your_theme]/css/source.css -o themes/custom/[your_theme]/css/style.css"
+  }
+}
