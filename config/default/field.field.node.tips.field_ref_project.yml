@@ -1,0 +1,29 @@
+uuid: 6d676fa7-5459-4dc4-b406-725c4220b4af
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ref_project
+    - node.type.tips
+    - taxonomy.vocabulary.project
+id: node.tips.field_ref_project
+field_name: field_ref_project
+entity_type: node
+bundle: tips
+label: Project
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      project: project
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
