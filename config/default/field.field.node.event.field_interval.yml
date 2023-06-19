@@ -1,0 +1,28 @@
+uuid: ea2004d4-45a6-4628-9c79-b10b8e982155
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interval
+    - node.type.event
+  module:
+    - smart_date
+id: node.event.field_interval
+field_name: field_interval
+entity_type: node
+bundle: event
+label: 期間
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_duration: 60
+    default_duration_increments: "30\r\n60|1 hour\r\n90\r\n120|2 hours\r\ncustom"
+    default_date_type: ''
+    default_date: ''
+    min: ''
+    max: ''
+default_value_callback: ''
+settings: {  }
+field_type: smartdate

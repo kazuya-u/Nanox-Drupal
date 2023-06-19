@@ -3,23 +3,48 @@ langcode: ja
 status: true
 dependencies:
   config:
+    - field.field.node.event.field_interval
     - field.field.node.event.field_ref_project
     - field.field.node.event.field_tags
     - node.type.event
   module:
+    - smart_date
     - user
 id: node.event.default
 targetEntityType: node
 bundle: event
 mode: default
 content:
+  field_interval:
+    type: smartdate_default
+    label: above
+    settings:
+      timezone_override: Asia/Tokyo
+      format_type: medium
+      format: y_m_d_h_i
+      force_chronological: false
+      add_classes: true
+      time_wrapper: true
+      localize: false
+      parts:
+        start: start
+        end: end
+        duration: duration
+      duration:
+        separator: ' | '
+        unit: ''
+        decimals: 2
+        suffix: h
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_ref_project:
     type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
   field_tags:
     type: entity_reference_label
@@ -27,12 +52,8 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 102
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
   langcode: true
+  links: true

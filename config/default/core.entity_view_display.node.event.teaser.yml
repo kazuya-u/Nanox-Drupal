@@ -1,9 +1,10 @@
 uuid: 3d4245a8-346e-43cc-9aeb-224a706b6203
 langcode: ja
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.event.field_interval
     - field.field.node.event.field_ref_project
     - field.field.node.event.field_tags
     - node.type.event
@@ -20,6 +21,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_interval: true
   field_ref_project: true
   field_tags: true
   langcode: true

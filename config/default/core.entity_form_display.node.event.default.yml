@@ -3,16 +3,36 @@ langcode: ja
 status: true
 dependencies:
   config:
+    - field.field.node.event.field_interval
     - field.field.node.event.field_ref_project
     - field.field.node.event.field_tags
     - node.type.event
   module:
     - select2
+    - smart_date
 id: node.event.default
 targetEntityType: node
 bundle: event
 mode: default
 content:
+  field_interval:
+    type: smartdate_inline
+    weight: 26
+    region: content
+    settings:
+      modal: false
+      default_duration: 60
+      default_duration_increments: |-
+        30
+        60|1 hour
+        90
+        120|2 hours
+        custom
+      show_extra: false
+      hide_date: true
+      allday: true
+      separator: to
+    third_party_settings: {  }
   field_ref_project:
     type: select2_entity_reference
     weight: 1
