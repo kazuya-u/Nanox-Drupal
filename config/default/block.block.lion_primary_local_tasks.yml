@@ -1,0 +1,22 @@
+uuid: 33a14e16-bc99-4844-91b2-069c71d7cb79
+langcode: ja
+status: true
+dependencies:
+  theme:
+    - lion
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: lion_primary_local_tasks
+theme: lion
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: プライマリータブ
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }
