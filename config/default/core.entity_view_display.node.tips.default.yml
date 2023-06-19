@@ -1,29 +1,29 @@
-uuid: e348600a-8a97-4fd2-96ff-8465f0c1bd80
+uuid: 1607a8c7-0d93-4fc4-a536-d19f1e45d103
 langcode: ja
 status: true
 dependencies:
   config:
-    - field.field.node.form_mode_in_modal.field_body
-    - field.field.node.form_mode_in_modal.field_ref_user
-    - node.type.form_mode_in_modal
+    - field.field.node.tips.field_ref_project
+    - field.field.node.tips.field_tags
+    - node.type.tips
   module:
-    - text
     - user
-id: node.form_mode_in_modal.default
+id: node.tips.default
 targetEntityType: node
-bundle: form_mode_in_modal
+bundle: tips
 mode: default
 content:
-  field_body:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 103
-    region: content
-  field_ref_user:
+  field_ref_project:
     type: entity_reference_label
-    label: hidden
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }

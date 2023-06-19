@@ -1,17 +1,17 @@
-uuid: 1f87f70c-18f9-4e5f-8b90-6b657c599683
+uuid: b02e6bd5-6901-4857-9806-6aed5a35463d
 langcode: ja
 status: true
 dependencies:
   module:
+    - datetime
     - node
-    - user
-id: node.field_ref_user
-field_name: field_ref_user
+id: node.field_deadline
+field_name: field_deadline
 entity_type: node
-type: entity_reference
+type: datetime
 settings:
-  target_type: user
-module: core
+  datetime_type: datetime
+module: datetime
 locked: false
 cardinality: 1
 translatable: true

@@ -1,0 +1,8 @@
+uuid: 4a0c8451-a3fe-42cb-95c1-30641c257846
+langcode: ja
+status: true
+dependencies: {  }
+id: y_m_d_h_i
+label: 'Y/m/d/h:i'
+locked: false
+pattern: 'Y/m/d/h:i'

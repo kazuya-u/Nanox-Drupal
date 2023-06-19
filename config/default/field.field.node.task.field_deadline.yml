@@ -1,0 +1,24 @@
+uuid: bec1c692-7f4a-4e89-a1e5-9c7eabbdc884
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_deadline
+    - node.type.task
+  module:
+    - datetime
+id: node.task.field_deadline
+field_name: field_deadline
+entity_type: node
+bundle: task
+label: 期限
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

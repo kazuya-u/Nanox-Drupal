@@ -1,13 +1,13 @@
-uuid: 65e85709-c505-4508-93f0-d54440d947a0
+uuid: 47696a1a-35b7-4a2b-9812-2b62f47a47f0
 langcode: ja
 status: true
 dependencies:
   config:
-    - node.type.form_mode_in_modal
-id: node.form_mode_in_modal.promote
+    - node.type.tips
+id: node.tips.promote
 field_name: promote
 entity_type: node
-bundle: form_mode_in_modal
+bundle: tips
 label: フロントページへ掲載
 description: ''
 required: false

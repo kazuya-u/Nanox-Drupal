@@ -1,0 +1,15 @@
+uuid: f5298dda-3a35-4864-8071-5ed72e0a0543
+langcode: ja
+status: true
+dependencies: {  }
+id: y_m_d_h_i
+label: 'Y/m/d/h:i'
+date_format: Y/m/d
+time_format: 'h:i'
+time_hour_format: ga
+allday_label: 'All day'
+separator: ' - '
+join: ', '
+ampm_reduce: '1'
+date_first: '1'
+site_time_toggle: '1'

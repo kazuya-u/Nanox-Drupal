@@ -1,18 +1,17 @@
-uuid: b712c393-4c90-44b6-a125-6b2f17a5f610
+uuid: c45aecb5-bf19-4285-9ef3-87164418149e
 langcode: ja
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.task.field_deadline
-    - field.field.node.task.field_ref_project
-    - field.field.node.task.field_ref_tags
-    - node.type.task
+    - field.field.node.tips.field_ref_project
+    - field.field.node.tips.field_tags
+    - node.type.tips
   module:
     - user
-id: node.task.teaser
+id: node.tips.teaser
 targetEntityType: node
-bundle: task
+bundle: tips
 mode: teaser
 content:
   links:
@@ -21,7 +20,6 @@ content:
     weight: 100
     region: content
 hidden:
-  field_deadline: true
   field_ref_project: true
-  field_ref_tags: true
+  field_tags: true
   langcode: true

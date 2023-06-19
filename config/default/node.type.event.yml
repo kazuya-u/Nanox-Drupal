@@ -1,4 +1,4 @@
-uuid: ac752a68-cf08-4615-8de7-c7e8c8705b43
+uuid: 62269399-a9a0-463a-ab0e-337cbe9f7cac
 langcode: ja
 status: true
 dependencies:
@@ -8,8 +8,8 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: 'PoC FormMode In Modal'
-type: form_mode_in_modal
+name: Event
+type: event
 description: ''
 help: ''
 new_revision: false

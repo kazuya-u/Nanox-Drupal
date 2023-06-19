@@ -1,16 +1,16 @@
-uuid: 11c2a0dc-eeb9-49b9-a28b-d58b90a0b5da
+uuid: 97aa84ed-8451-4765-8aee-3e01915b49ba
 langcode: ja
 status: true
 dependencies:
   module:
     - node
-    - text
-id: node.field_body
-field_name: field_body
+    - smart_date
+id: node.field_interval
+field_name: field_interval
 entity_type: node
-type: text_long
+type: smartdate
 settings: {  }
-module: text
+module: smart_date
 locked: false
 cardinality: 1
 translatable: true

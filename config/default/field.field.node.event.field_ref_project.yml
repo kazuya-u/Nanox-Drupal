@@ -1,0 +1,29 @@
+uuid: 603880d2-5eb5-47a2-892f-ad86d5eccfd1
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ref_project
+    - node.type.event
+    - taxonomy.vocabulary.project
+id: node.event.field_ref_project
+field_name: field_ref_project
+entity_type: node
+bundle: event
+label: Project
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      project: project
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

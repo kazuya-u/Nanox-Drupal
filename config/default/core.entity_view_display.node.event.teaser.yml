@@ -1,18 +1,18 @@
-uuid: b712c393-4c90-44b6-a125-6b2f17a5f610
+uuid: 3d4245a8-346e-43cc-9aeb-224a706b6203
 langcode: ja
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.task.field_deadline
-    - field.field.node.task.field_ref_project
-    - field.field.node.task.field_ref_tags
-    - node.type.task
+    - field.field.node.event.field_interval
+    - field.field.node.event.field_ref_project
+    - field.field.node.event.field_tags
+    - node.type.event
   module:
     - user
-id: node.task.teaser
+id: node.event.teaser
 targetEntityType: node
-bundle: task
+bundle: event
 mode: teaser
 content:
   links:
@@ -21,7 +21,7 @@ content:
     weight: 100
     region: content
 hidden:
-  field_deadline: true
+  field_interval: true
   field_ref_project: true
-  field_ref_tags: true
+  field_tags: true
   langcode: true

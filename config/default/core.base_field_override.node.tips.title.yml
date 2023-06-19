@@ -1,0 +1,18 @@
+uuid: 39bf80f6-fe90-4c3f-80dd-2242e3bc4c78
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.tips
+id: node.tips.title
+field_name: title
+entity_type: node
+bundle: tips
+label: Tips
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
