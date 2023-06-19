@@ -1,0 +1,23 @@
+uuid: b721f092-a629-4c34-bf7e-617bfd9914b9
+langcode: ja
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - lion
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: lion_search_form_wide
+theme: lion
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: a2620b83-991e-4347-9fff-25c39c65192d
+langcode: ja
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lion
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: lion_breadcrumbs
+theme: lion
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: パンくず
+  label_display: '0'
+  provider: system
+visibility: {  }
