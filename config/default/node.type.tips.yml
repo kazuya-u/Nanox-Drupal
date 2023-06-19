@@ -1,0 +1,17 @@
+uuid: ba75b3b0-bb5d-400f-ae97-de909a4b7370
+langcode: ja
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Tips
+type: tips
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

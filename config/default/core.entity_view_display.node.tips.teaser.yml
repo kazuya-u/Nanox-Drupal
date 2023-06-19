@@ -1,0 +1,21 @@
+uuid: c45aecb5-bf19-4285-9ef3-87164418149e
+langcode: ja
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.tips
+  module:
+    - user
+id: node.tips.teaser
+targetEntityType: node
+bundle: tips
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

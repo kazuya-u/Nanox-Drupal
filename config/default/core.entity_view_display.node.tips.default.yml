@@ -1,0 +1,20 @@
+uuid: 1607a8c7-0d93-4fc4-a536-d19f1e45d103
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.tips
+  module:
+    - user
+id: node.tips.default
+targetEntityType: node
+bundle: tips
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

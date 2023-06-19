@@ -1,0 +1,22 @@
+uuid: 47696a1a-35b7-4a2b-9812-2b62f47a47f0
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.tips
+id: node.tips.promote
+field_name: promote
+entity_type: node
+bundle: tips
+label: フロントページへ掲載
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: オン
+  off_label: オフ
+field_type: boolean
