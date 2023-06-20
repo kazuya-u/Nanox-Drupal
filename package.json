@@ -3,6 +3,10 @@
     "tailwindcss": "^3.3.2"
   },
   "scripts": {
-    "build-css": "postcss themes/custom/[your_theme]/css/source.css -o themes/custom/[your_theme]/css/style.css"
+    "build-css": "postcss web/themes/custom/lion/css/source.css -o web/themes/custom/lion/css/style.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss-cli": "^10.1.0"
   }
 }
