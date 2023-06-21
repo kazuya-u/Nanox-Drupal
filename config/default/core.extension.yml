@@ -43,6 +43,7 @@ module:
   shortcut: 0
   smart_date: 0
   system: 0
+  tailwindcss_utility: 0
   taxonomy: 0
   text: 0
   token: 0
