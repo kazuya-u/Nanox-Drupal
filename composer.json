@@ -24,16 +24,20 @@
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
+        "drupal/ds": "^3.15",
         "drupal/field_group": "^3.4",
         "drupal/form_mode_control": "^2.1",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/select2": "^1.15",
         "drupal/smart_date": "^4.0",
+        "drupal/tailwind_jit": "^1.0",
+        "drupal/tailwindcss_utility": "^2.0",
         "drupal/token": "^1.11",
         "drupal/token_filter": "^2.0",
         "drush/drush": "^12.0",
         "npm-asset/select2": "^4.0",
-        "oomphinc/composer-installers-extender": "^2.0"
+        "oomphinc/composer-installers-extender": "^2.0",
+        "webtourismus/tailwindcss-cli": "^3.3"
     },
     "conflict": {
         "drupal/drupal": "*"

@@ -5,3 +5,6 @@
 @import 'tailwindcss/utilities';
 
 /* ここに独自のスタイルを追加 */
+body {
+  background-color: red;
+}

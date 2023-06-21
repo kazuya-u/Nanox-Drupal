@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87542995c96d095b705700fc8dc50a96",
+    "content-hash": "44de8800689b8a4b425f6d616ce8fae9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1601,6 +1601,76 @@
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core."
         },
         {
+            "name": "drupal/ds",
+            "version": "3.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ds.git",
+                "reference": "8.x-3.15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ds-8.x-3.15.zip",
+                "reference": "8.x-3.15",
+                "shasum": "cf7ee6bde717dc2d7f10d5f834ca29fb80285d0d"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "require-dev": {
+                "drupal/classy": "^1.0",
+                "drupal/devel": "5.x-dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.15",
+                    "datestamp": "1662818537",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Bram Goffings",
+                    "homepage": "https://www.drupal.org/user/172527",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Kristof De Jaeger",
+                    "homepage": "http://realize.be/",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Brecht Ceyssens",
+                    "homepage": "https://www.drupal.org/user/591438",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "swentel",
+                    "homepage": "https://www.drupal.org/user/107403"
+                }
+            ],
+            "description": "Extend the display options for every entity type.",
+            "homepage": "https://www.drupal.org/project/ds",
+            "keywords": [
+                "drupal",
+                "layout",
+                "php"
+            ],
+            "support": {
+                "source": "http://git.drupal.org/project/ds.git",
+                "issues": "https://www.drupal.org/project/issues/ds",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/field_group",
             "version": "3.4.0",
             "source": {
@@ -1940,6 +2010,103 @@
                 "source": "https://git.drupalcode.org/project/smart_date",
                 "issues": "https://www.drupal.org/project/issues/smart_date",
                 "documentation": "https://www.drupal.org/docs/contributed-modules/smart-date"
+            }
+        },
+        {
+            "name": "drupal/tailwind_jit",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/tailwind_jit.git",
+                "reference": "1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tailwind_jit-1.0.1.zip",
+                "reference": "1.0.1",
+                "shasum": "cf55a305358f9ed43d7c56522165cd469b79d71e"
+            },
+            "require": {
+                "drupal/core": "^9.5 || ^10",
+                "php": "^8.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.1",
+                    "datestamp": "1676909034",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "hudri",
+                    "homepage": "https://www.drupal.org/user/3513676"
+                }
+            ],
+            "description": "Provides Just-in-Time compilation of Tailwind CSS for Drupal themes.",
+            "homepage": "https://www.drupal.org/project/tailwind_jit",
+            "support": {
+                "source": "https://git.drupalcode.org/project/tailwind_jit"
+            }
+        },
+        {
+            "name": "drupal/tailwindcss_utility",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/tailwindcss_utility.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tailwindcss_utility-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "6f5d6b9cbed1f794610d75dcc65a4d063b71c57f"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1681414204",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Fabianx",
+                    "homepage": "https://www.drupal.org/user/693738"
+                },
+                {
+                    "name": "Graber",
+                    "homepage": "https://www.drupal.org/user/1599440"
+                },
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
+                }
+            ],
+            "description": "Tailwind Utilities",
+            "homepage": "https://www.drupal.org/project/tailwindcss_utility",
+            "support": {
+                "source": "https://git.drupalcode.org/project/tailwindcss_utility"
             }
         },
         {
@@ -6527,6 +6694,36 @@
                 "source": "https://github.com/webflo/drupal-finder/tree/1.2.2"
             },
             "time": "2020-10-27T09:42:17+00:00"
+        },
+        {
+            "name": "webtourismus/tailwindcss-cli",
+            "version": "v3.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webtourismus/tailwindcss-cli.git",
+                "reference": "853e44cbbc4c6356d02e73f732dd6f15d856a1d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webtourismus/tailwindcss-cli/zipball/853e44cbbc4c6356d02e73f732dd6f15d856a1d1",
+                "reference": "853e44cbbc4c6356d02e73f732dd6f15d856a1d1",
+                "shasum": ""
+            },
+            "bin": [
+                "bin/tailwindcss"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Standalone binary CLI executable of Tailwind CSS for Linux x64 systems. Patched version including postcss-import and postcss-nested.",
+            "homepage": "https://tailwindcss.com/blog/standalone-cli",
+            "support": {
+                "issues": "https://github.com/webtourismus/tailwindcss-cli/issues",
+                "source": "https://github.com/webtourismus/tailwindcss-cli/tree/v3.3.2"
+            },
+            "time": "2023-05-10T15:22:28+00:00"
         }
     ],
     "packages-dev": [],
