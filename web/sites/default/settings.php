@@ -923,3 +923,6 @@ else {
 if (PHP_SAPI === 'cli') {
   ini_set('memory_limit', '2G');
 }
+
+// Set Tailwindcss.
+$settings['tailwind_jit_executable'] = '../vendor/bin/tailwindcss';

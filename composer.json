@@ -36,7 +36,8 @@
         "drupal/token_filter": "^2.0",
         "drush/drush": "^12.0",
         "npm-asset/select2": "^4.0",
-        "oomphinc/composer-installers-extender": "^2.0"
+        "oomphinc/composer-installers-extender": "^2.0",
+        "webtourismus/tailwindcss-cli": "^3.3"
     },
     "conflict": {
         "drupal/drupal": "*"
