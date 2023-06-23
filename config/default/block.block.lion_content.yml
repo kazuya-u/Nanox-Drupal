@@ -1,6 +1,6 @@
 uuid: 31cb87c3-c1ce-413d-9758-bcf16308d7a7
 langcode: ja
-status: false
+status: true
 dependencies:
   module:
     - system
