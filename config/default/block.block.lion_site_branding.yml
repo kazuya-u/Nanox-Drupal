@@ -1,6 +1,6 @@
-uuid: 4d4e8639-9224-4c1f-bff5-9222c1c4ad63
+uuid: 0f68fb10-4802-438c-b4e0-5fd459b6f5ea
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
 id: lion_site_branding
 theme: lion
-region: header
+region: sidebar_first
 weight: 0
 provider: null
 plugin: system_branding_block

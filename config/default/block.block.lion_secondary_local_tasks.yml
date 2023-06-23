@@ -1,6 +1,6 @@
-uuid: 3e51c7e2-2e53-43c3-aee0-d14c6e17ac90
+uuid: 9604f4e1-325b-4061-9b47-78b52bd108ff
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - lion
@@ -8,7 +8,7 @@ _core:
   default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
 id: lion_secondary_local_tasks
 theme: lion
-region: highlighted
+region: sidebar_first
 weight: -2
 provider: null
 plugin: local_tasks_block

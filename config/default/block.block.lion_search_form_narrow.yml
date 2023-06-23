@@ -1,6 +1,6 @@
-uuid: 7f9cc460-d9a6-4ff7-91f1-f121fed77832
+uuid: d300a4ae-8a47-4d56-be69-1f520605420e
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - search
@@ -10,7 +10,7 @@ _core:
   default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
 id: lion_search_form_narrow
 theme: lion
-region: primary_menu
+region: sidebar_first
 weight: -4
 provider: null
 plugin: search_form_block

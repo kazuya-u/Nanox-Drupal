@@ -1,6 +1,6 @@
-uuid: 13f36745-fe39-4973-828d-8c8f2a724ef2
+uuid: 6e29752c-071e-4584-b916-7208f3e9e772
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
@@ -12,7 +12,7 @@ _core:
   default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
 id: lion_account_menu
 theme: lion
-region: secondary_menu
+region: sidebar_first
 weight: -4
 provider: null
 plugin: 'system_menu_block:account'
