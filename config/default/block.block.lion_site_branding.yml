@@ -1,6 +1,6 @@
 uuid: e5ac9e31-0028-4f1a-a3e8-84446e94f4f6
 langcode: ja
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
 id: lion_site_branding
 theme: lion
-region: header
+region: main
 weight: 0
 provider: null
 plugin: system_branding_block

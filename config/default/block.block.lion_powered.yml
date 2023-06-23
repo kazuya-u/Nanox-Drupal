@@ -1,6 +1,6 @@
 uuid: bbc270cd-eab0-4239-afd4-b9e092961c86
 langcode: ja
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
 id: lion_powered
 theme: lion
-region: sidebar_first
+region: main
 weight: 0
 provider: null
 plugin: system_powered_by_block

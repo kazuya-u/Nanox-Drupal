@@ -1,6 +1,6 @@
 uuid: 33a14e16-bc99-4844-91b2-069c71d7cb79
 langcode: ja
-status: true
+status: false
 dependencies:
   theme:
     - lion
@@ -8,7 +8,7 @@ _core:
   default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
 id: lion_primary_local_tasks
 theme: lion
-region: highlighted
+region: main
 weight: -4
 provider: null
 plugin: local_tasks_block

@@ -1,6 +1,6 @@
 uuid: 96de73b5-d552-4db3-8fdf-a24700bab5a6
 langcode: ja
-status: true
+status: false
 dependencies:
   theme:
     - lion
@@ -8,7 +8,7 @@ _core:
   default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
 id: lion_primary_admin_actions
 theme: lion
-region: highlighted
+region: main
 weight: -5
 provider: null
 plugin: local_actions_block
