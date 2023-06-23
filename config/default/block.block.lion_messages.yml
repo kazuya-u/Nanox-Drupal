@@ -1,6 +1,6 @@
-uuid: 5a8cf54d-ddf9-425d-b9a0-05c66936304a
-langcode: ja
-status: false
+uuid: ffb68e60-52d3-4bda-b0e9-70246e4d516f
+langcode: en
+status: true
 dependencies:
   module:
     - system
@@ -10,13 +10,13 @@ _core:
   default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
 id: lion_messages
 theme: lion
-region: main
+region: highlighted
 weight: -5
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: ステータスメッセージ
+  label: 'Status messages'
   label_display: '0'
   provider: system
 visibility: {  }

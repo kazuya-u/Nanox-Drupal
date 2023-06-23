@@ -1,6 +1,6 @@
-uuid: b721f092-a629-4c34-bf7e-617bfd9914b9
-langcode: ja
-status: false
+uuid: bb827f91-8088-45a5-aa86-64c617f2d677
+langcode: en
+status: true
 dependencies:
   module:
     - search
@@ -10,7 +10,7 @@ _core:
   default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
 id: lion_search_form_wide
 theme: lion
-region: main
+region: secondary_menu
 weight: -5
 provider: null
 plugin: search_form_block

@@ -1,5 +1,5 @@
-uuid: 31cb87c3-c1ce-413d-9758-bcf16308d7a7
-langcode: ja
+uuid: 5c4b3dc6-c0c1-404a-9bfb-bb2e593f8bff
+langcode: en
 status: true
 dependencies:
   module:
@@ -10,13 +10,13 @@ _core:
   default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
 id: lion_content
 theme: lion
-region: main
+region: content
 weight: 0
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: メインページコンテンツ
+  label: 'Main page content'
   label_display: '0'
   provider: system
 visibility: {  }

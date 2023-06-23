@@ -1,6 +1,6 @@
-uuid: aff22eb8-0683-4bcf-b687-1a4e081a7113
-langcode: ja
-status: false
+uuid: 7490a021-b731-4030-bc0e-509d742302e2
+langcode: en
+status: true
 dependencies:
   module:
     - help
@@ -10,13 +10,13 @@ _core:
   default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
 id: lion_help
 theme: lion
-region: main
+region: sidebar_first
 weight: 0
 provider: null
 plugin: help_block
 settings:
   id: help_block
-  label: ヘルプ
+  label: Help
   label_display: '0'
   provider: help
 visibility: {  }
