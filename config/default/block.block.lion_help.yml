@@ -1,6 +1,6 @@
 uuid: aff22eb8-0683-4bcf-b687-1a4e081a7113
 langcode: ja
-status: true
+status: false
 dependencies:
   module:
     - help
@@ -10,7 +10,7 @@ _core:
   default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
 id: lion_help
 theme: lion
-region: sidebar_first
+region: main
 weight: 0
 provider: null
 plugin: help_block
