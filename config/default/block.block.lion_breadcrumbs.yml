@@ -1,6 +1,6 @@
-uuid: 795a93bd-fc85-4a3d-8323-e990abfd70b0
+uuid: f0176871-7fb5-4de4-a773-31b6e9d306e8
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
 id: lion_breadcrumbs
 theme: lion
-region: breadcrumb
+region: sidebar_first
 weight: 0
 provider: null
 plugin: system_breadcrumb_block
