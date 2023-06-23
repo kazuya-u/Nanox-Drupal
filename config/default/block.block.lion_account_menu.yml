@@ -1,6 +1,6 @@
-uuid: 013cc34f-2828-4a81-ad98-e48914c680d5
-langcode: ja
-status: false
+uuid: 13f36745-fe39-4973-828d-8c8f2a724ef2
+langcode: en
+status: true
 dependencies:
   config:
     - system.menu.account
@@ -12,13 +12,13 @@ _core:
   default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
 id: lion_account_menu
 theme: lion
-region: main
+region: secondary_menu
 weight: -4
 provider: null
 plugin: 'system_menu_block:account'
 settings:
   id: 'system_menu_block:account'
-  label: ユーザーアカウントメニュー
+  label: 'User account menu'
   label_display: '0'
   provider: system
   level: 1

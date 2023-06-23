@@ -1,6 +1,6 @@
-uuid: 0aba8f46-dcd4-48fd-a7bd-8f690417529f
-langcode: ja
-status: false
+uuid: 05850c48-011b-4c2e-8d20-7b27a35d813b
+langcode: en
+status: true
 dependencies:
   theme:
     - lion
@@ -8,13 +8,13 @@ _core:
   default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
 id: lion_page_title
 theme: lion
-region: main
+region: sidebar_first
 weight: -5
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: ページのタイトル
+  label: 'Page title'
   label_display: '0'
   provider: core
 visibility: {  }

@@ -20,5 +20,5 @@ libraries-extend:
     - lion/progress
 core_version_requirement: ^10
 generator: 'starterkit_theme:10.0.9'
-regions:
-  main: Main
+# regions:
+#   main: Main

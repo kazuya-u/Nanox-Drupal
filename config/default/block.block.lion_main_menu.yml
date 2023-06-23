@@ -1,6 +1,6 @@
-uuid: 912919a3-d623-4f6a-8e0f-064a53822545
-langcode: ja
-status: false
+uuid: 403bee8c-cb34-4d8a-9653-16fd247140e5
+langcode: en
+status: true
 dependencies:
   config:
     - system.menu.main
@@ -12,13 +12,13 @@ _core:
   default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
 id: lion_main_menu
 theme: lion
-region: main
+region: primary_menu
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: メインナビゲーション
+  label: 'Main navigation'
   label_display: '0'
   provider: system
   level: 1
