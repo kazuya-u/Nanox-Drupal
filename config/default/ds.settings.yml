@@ -7,6 +7,18 @@ ft-default: reset
 ft-show-colon: false
 ft-layout-builder: true
 classes:
-  region: {  }
+  region:
+    - flex
+    - items-start
+    - items-center
+    - justify-center
+    - justify-between
+    - justify-end
+    - mx-auto
+    - w-full
+    - bg-gray-50
+    - bg-blue-50
+    - pt-64
+    - px-36
   field: {  }
 use_field_names: true
