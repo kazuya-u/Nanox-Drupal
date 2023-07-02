@@ -28,6 +28,7 @@
         "drupal/field_group": "^3.4",
         "drupal/form_mode_control": "^2.1",
         "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/page_manager": "^4.0@RC",
         "drupal/select2": "^1.15",
         "drupal/smart_date": "^4.0",
         "drupal/tailwind_jit": "^1.0",
