@@ -1,0 +1,12 @@
+uuid: 44199b53-da1e-46a3-aec8-c2b6acd83478
+langcode: ja
+status: true
+dependencies: {  }
+id: front
+label: Front
+description: ''
+use_admin_theme: false
+path: /home
+access_logic: and
+access_conditions: {  }
+parameters: {  }

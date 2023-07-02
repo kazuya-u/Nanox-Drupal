@@ -1,0 +1,20 @@
+uuid: 1d870a36-88d4-4f4a-9dff-2c7aa163ef1a
+langcode: ja
+status: true
+dependencies:
+  config:
+    - page_manager.page.front
+id: front-layout_builder-0
+label: レイアウトビルダー
+weight: 0
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: ade0d593-febb-4adb-9920-d30162955fcc
+  sections: {  }
+page: front
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
