@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - page_manager.page.front
+    - system.menu.add
     - views.view.project
   module:
     - ds
+    - system
     - views
 id: front-layout_builder-0
 label: レイアウトビルダー
@@ -44,6 +46,20 @@ variant_settings:
             views_label: ''
             items_per_page: none
           weight: 0
+          additional: {  }
+        f7991932-34ce-46dc-a04c-8c1eb7ad299b:
+          uuid: f7991932-34ce-46dc-a04c-8c1eb7ad299b
+          region: ds_content
+          configuration:
+            id: 'system_menu_block:add'
+            label: 'Add Items'
+            label_display: '0'
+            provider: system
+            context_mapping: {  }
+            level: 1
+            depth: 0
+            expand_all_items: false
+          weight: 1
           additional: {  }
       third_party_settings: {  }
 page: front

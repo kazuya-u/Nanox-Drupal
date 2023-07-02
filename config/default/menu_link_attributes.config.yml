@@ -1,8 +1,8 @@
-_core:
-  default_config_hash: kO5fDGTDu1JqYpxKrtzjdzwObU2Ko_3CxABNjqBbYos
-langcode: ja
 attributes:
   class:
+    label: ''
+    description: ''
+  data-dialog-type:
     label: ''
     description: ''
   target:
