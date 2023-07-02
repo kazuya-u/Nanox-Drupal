@@ -1,0 +1,68 @@
+uuid: 1d870a36-88d4-4f4a-9dff-2c7aa163ef1a
+langcode: ja
+status: true
+dependencies:
+  config:
+    - page_manager.page.front
+    - system.menu.add
+    - views.view.project
+  module:
+    - ds
+    - system
+    - views
+id: front-layout_builder-0
+label: レイアウトビルダー
+weight: 0
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: ade0d593-febb-4adb-9920-d30162955fcc
+  sections:
+    -
+      layout_id: ds_1col
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+      components:
+        bac8d356-67e2-4dbe-8804-938191dc67b3:
+          uuid: bac8d356-67e2-4dbe-8804-938191dc67b3
+          region: ds_content
+          configuration:
+            id: 'views_block:project-top'
+            label: ''
+            label_display: '0'
+            provider: views
+            context_mapping: {  }
+            views_label: ''
+            items_per_page: none
+          weight: 0
+          additional: {  }
+        f7991932-34ce-46dc-a04c-8c1eb7ad299b:
+          uuid: f7991932-34ce-46dc-a04c-8c1eb7ad299b
+          region: ds_content
+          configuration:
+            id: 'system_menu_block:add'
+            label: 'Add Items'
+            label_display: '0'
+            provider: system
+            context_mapping: {  }
+            level: 1
+            depth: 0
+            expand_all_items: false
+          weight: 1
+          additional: {  }
+      third_party_settings: {  }
+page: front
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -14,7 +14,7 @@ provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: メインページコンテンツ
-  label_display: visible
+  label: 'Main Contents'
+  label_display: '0'
   provider: system
 visibility: {  }

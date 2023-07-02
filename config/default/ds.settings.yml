@@ -5,7 +5,7 @@ disabled: false
 field_template: true
 ft-default: reset
 ft-show-colon: false
-ft-layout-builder: false
+ft-layout-builder: true
 classes:
   region: {  }
   field: {  }

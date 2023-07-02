@@ -1,0 +1,8 @@
+uuid: da03c310-2e07-4963-b6ed-57cc06eec11b
+langcode: ja
+status: true
+dependencies: {  }
+id: add
+label: 'Add Items'
+description: コンテンツ追加メニュー
+locked: false
