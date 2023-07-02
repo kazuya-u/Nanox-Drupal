@@ -32,24 +32,67 @@ variant_settings:
         link_attribute: ''
         link_custom: ''
         classes:
-          layout_class: {  }
+          layout_class:
+            flex: flex
+            items-center: items-center
+            justify-center: justify-center
+            mx-auto: mx-auto
+            w-full: w-full
+            pt-64: pt-64
+          ds_content: {  }
+      components:
+        f74efc9b-751c-483b-936e-6464699b769d:
+          uuid: f74efc9b-751c-483b-936e-6464699b769d
+          region: ds_content
+          configuration:
+            id: 'system_menu_block:add'
+            label: 'Add Item.'
+            label_display: '0'
+            provider: system
+            context_mapping: {  }
+            level: 1
+            depth: 0
+            expand_all_items: false
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+    -
+      layout_id: ds_2col
+      layout_settings:
+        label: ''
+        context_mapping: {  }
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class:
+            flex: flex
+            mx-auto: mx-auto
+            w-full: w-full
+            px-36: px-36
+          left: {  }
+          right: {  }
       components:
         bac8d356-67e2-4dbe-8804-938191dc67b3:
           uuid: bac8d356-67e2-4dbe-8804-938191dc67b3
-          region: ds_content
+          region: left
           configuration:
             id: 'views_block:project-top'
-            label: ''
-            label_display: '0'
+            label: Project
+            label_display: visible
             provider: views
             context_mapping: {  }
-            views_label: ''
+            views_label: Project
             items_per_page: none
           weight: 0
           additional: {  }
         f7991932-34ce-46dc-a04c-8c1eb7ad299b:
           uuid: f7991932-34ce-46dc-a04c-8c1eb7ad299b
-          region: ds_content
+          region: right
           configuration:
             id: 'system_menu_block:add'
             label: 'Add Items'
