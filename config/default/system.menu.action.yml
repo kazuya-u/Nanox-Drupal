@@ -1,0 +1,8 @@
+uuid: 4f9b9295-acd4-4e22-815d-1b58ca54cb0f
+langcode: ja
+status: true
+dependencies: {  }
+id: action
+label: Action
+description: ''
+locked: false
