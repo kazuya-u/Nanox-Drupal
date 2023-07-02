@@ -5,6 +5,10 @@ attributes:
   data-dialog-type:
     label: ''
     description: ''
+    options:
+      modal: modal
+      dialog: dialog
+    default_value: ''
   target:
     label: ''
     description: ''
