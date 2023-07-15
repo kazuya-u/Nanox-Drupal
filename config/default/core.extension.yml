@@ -46,8 +46,11 @@ module:
   page_manager_ui: 0
   path: 0
   path_alias: 0
+  rest: 0
+  restui: 0
   search: 0
   select2: 0
+  serialization: 0
   shortcut: 0
   smart_date: 0
   system: 0
