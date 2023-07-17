@@ -27,6 +27,7 @@ module:
   file: 0
   filter: 0
   form_mode_control: 0
+  hal: 0
   help: 0
   history: 0
   image: 0
