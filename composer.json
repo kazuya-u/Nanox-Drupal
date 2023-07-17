@@ -28,6 +28,7 @@
         "drupal/entity_reference_revisions": "^1.10",
         "drupal/field_group": "^3.4",
         "drupal/form_mode_control": "^2.1",
+        "drupal/hal": "^2.0",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/menu_item_extras": "^3.0",
         "drupal/menu_link_attributes": "^1.3",
