@@ -8,47 +8,8 @@ dependencies:
     - field.field.node.task.field_ref_tags
     - node.type.task
   module:
-    - ds
     - smart_date
     - user
-third_party_settings:
-  ds:
-    layout:
-      id: ds_reset
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        classes:
-          layout_class: {  }
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        label: ''
-    regions:
-      ds_content:
-        - node_title
-        - field_ref_tags
-        - field_ref_project
-        - field_deadline
-    fields:
-      node_title:
-        plugin_id: node_title
-        weight: 1
-        label: hidden
-        formatter: default
-        settings:
-          link: false
-          'link class': ''
-          wrapper: h2
-          class: text-yellow-50
-        ft:
-          id: reset
-          settings:
-            lb: ''
 id: node.task.default
 targetEntityType: node
 bundle: task
@@ -90,13 +51,7 @@ content:
     label: above
     settings:
       link: true
-    third_party_settings:
-      ds:
-        ds_limit: ''
-        ft:
-          id: reset
-          settings:
-            lb: ''
+    third_party_settings: {  }
     weight: 2
     region: ds_content
 hidden:
