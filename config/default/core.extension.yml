@@ -46,8 +46,6 @@ module:
   node: 0
   options: 0
   page_cache: 0
-  page_manager: 0
-  page_manager_ui: 0
   path: 0
   path_alias: 0
   rest: 0
@@ -59,7 +57,6 @@ module:
   simple_oauth: 0
   smart_date: 0
   system: 0
-  tailwind_jit: 0
   taxonomy: 0
   text: 0
   token: 0
@@ -72,7 +69,6 @@ module:
   ds: 1
   ds_extras: 2
   views: 10
-  paragraphs: 11
   standard: 1000
 theme:
   claro: 0
