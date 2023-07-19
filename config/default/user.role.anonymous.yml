@@ -2,8 +2,13 @@ uuid: 0a0a1225-9ce3-4faa-aad4-4d0ed827cdd5
 langcode: ja
 status: true
 dependencies:
+  config:
+    - node.type.article
   module:
+    - consumers
     - contact
+    - node
+    - rest
     - search
     - system
 _core:
@@ -15,4 +20,11 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access site-wide contact form'
+  - 'add consumer entities'
+  - 'administer consumer entities'
+  - 'administer rest resources'
+  - 'create article content'
+  - 'delete own consumer entities'
   - 'search content'
+  - 'update own consumer entities'
+  - 'view own consumer entities'

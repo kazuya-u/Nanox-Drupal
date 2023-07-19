@@ -14,6 +14,7 @@ dependencies:
     - filter
     - node
     - path
+    - rest
     - search
     - shortcut
     - system
@@ -36,6 +37,7 @@ permissions:
   - 'access site-wide contact form'
   - 'access toolbar'
   - 'access tour'
+  - 'administer rest resources'
   - 'administer url aliases'
   - 'create article content'
   - 'create page content'
@@ -43,6 +45,7 @@ permissions:
   - 'create url aliases'
   - 'delete article revisions'
   - 'delete own article content'
+  - 'delete own files'
   - 'delete own page content'
   - 'delete page revisions'
   - 'edit own article content'
