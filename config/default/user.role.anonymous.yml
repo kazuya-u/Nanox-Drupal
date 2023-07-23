@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - node.type.article
+    - node.type.task
   module:
     - consumers
     - contact
@@ -24,6 +25,7 @@ permissions:
   - 'administer consumer entities'
   - 'administer rest resources'
   - 'create article content'
+  - 'create task content'
   - 'delete own consumer entities'
   - 'search content'
   - 'update own consumer entities'

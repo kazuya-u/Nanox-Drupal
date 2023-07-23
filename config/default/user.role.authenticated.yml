@@ -6,6 +6,7 @@ dependencies:
     - filter.format.rich_text
     - node.type.article
     - node.type.page
+    - node.type.task
     - taxonomy.vocabulary.tags
   module:
     - contact
@@ -41,6 +42,7 @@ permissions:
   - 'administer url aliases'
   - 'create article content'
   - 'create page content'
+  - 'create task content'
   - 'create terms in tags'
   - 'create url aliases'
   - 'delete article revisions'

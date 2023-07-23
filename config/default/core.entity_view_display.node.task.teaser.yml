@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.task.field_deadline
+    - field.field.node.task.field_description
     - field.field.node.task.field_ref_project
     - field.field.node.task.field_ref_tags
     - node.type.task
@@ -22,6 +23,7 @@ content:
     region: content
 hidden:
   field_deadline: true
+  field_description: true
   field_ref_project: true
   field_ref_tags: true
   langcode: true

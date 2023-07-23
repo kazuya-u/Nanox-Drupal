@@ -47,7 +47,6 @@ module:
   path_alias: 0
   phpass: 0
   rest: 0
-  restui: 0
   search: 0
   select2: 0
   serialization: 0
