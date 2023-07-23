@@ -28,6 +28,7 @@
         "drupal/field_group": "^3.4",
         "drupal/hal": "^2.0",
         "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/jsonapi_extras": "^3.23",
         "drupal/menu_item_extras": "^3.0",
         "drupal/restui": "^1.21",
         "drupal/select2": "^1.15",
