@@ -5,6 +5,7 @@ dependencies:
   config:
     - filter.format.rich_text
     - node.type.article
+    - node.type.event
     - node.type.page
     - node.type.task
     - taxonomy.vocabulary.tags
@@ -38,6 +39,7 @@ permissions:
   - 'access site-wide contact form'
   - 'access toolbar'
   - 'access tour'
+  - 'administer nodes'
   - 'administer rest resources'
   - 'administer url aliases'
   - 'create article content'
@@ -45,17 +47,26 @@ permissions:
   - 'create task content'
   - 'create terms in tags'
   - 'create url aliases'
+  - 'delete any task content'
   - 'delete article revisions'
   - 'delete own article content'
   - 'delete own files'
   - 'delete own page content'
+  - 'delete own task content'
   - 'delete page revisions'
+  - 'delete task revisions'
+  - 'edit any event content'
+  - 'edit any task content'
   - 'edit own article content'
+  - 'edit own event content'
   - 'edit own page content'
+  - 'edit own task content'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'revert task revisions'
   - 'search content'
   - 'use text format rich_text'
   - 'view all revisions'
   - 'view own unpublished content'
+  - 'view task revisions'
   - 'view the administration theme'
