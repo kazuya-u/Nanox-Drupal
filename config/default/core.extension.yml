@@ -20,10 +20,12 @@ module:
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
+  facets: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
+  form_options_attributes: 0
   hal: 0
   help: 0
   history: 0
@@ -46,6 +48,9 @@ module:
   phpass: 0
   rest: 0
   search: 0
+  select2: 0
+  select2_facets: 0
+  select2_publish: 0
   serialization: 0
   shortcut: 0
   simple_oauth: 0
