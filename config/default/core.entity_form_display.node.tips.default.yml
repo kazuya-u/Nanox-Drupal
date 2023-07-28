@@ -8,7 +8,6 @@ dependencies:
     - node.type.tips
   module:
     - path
-    - select2
 id: node.tips.default
 targetEntityType: node
 bundle: tips
@@ -21,24 +20,24 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_ref_project:
-    type: select2_entity_reference
-    weight: 1
+    type: entity_reference_autocomplete
+    weight: 26
     region: content
     settings:
-      width: 100%
-      autocomplete: false
       match_operator: CONTAINS
       match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_tags:
-    type: select2_entity_reference
-    weight: 2
+    type: entity_reference_autocomplete
+    weight: 27
     region: content
     settings:
-      width: 100%
-      autocomplete: false
       match_operator: CONTAINS
       match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select

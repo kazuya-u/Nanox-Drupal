@@ -36,7 +36,6 @@ module:
   layout_discovery: 0
   link: 0
   locale: 0
-  menu_item_extras: 0
   menu_link_content: 0
   menu_ui: 0
   mysql: 0
@@ -48,7 +47,6 @@ module:
   phpass: 0
   rest: 0
   search: 0
-  select2: 0
   serialization: 0
   shortcut: 0
   simple_oauth: 0
