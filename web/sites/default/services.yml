@@ -1,5 +1,7 @@
 parameters:
   session.storage.options:
+    session.storage.options:
+      cookie_samesite: None
     # Default ini options for sessions.
     #
     # Some distributions of Linux (most notably Debian) ship their PHP
