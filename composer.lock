@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e07d487c5e924f1dd99f16a1521e011",
+    "content-hash": "1d45fc4cbe8b649f51e20b75d8e76727",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7830,36 +7830,6 @@
                 "source": "https://github.com/webflo/drupal-finder/tree/1.2.2"
             },
             "time": "2020-10-27T09:42:17+00:00"
-        },
-        {
-            "name": "webtourismus/tailwindcss-cli",
-            "version": "v3.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webtourismus/tailwindcss-cli.git",
-                "reference": "853e44cbbc4c6356d02e73f732dd6f15d856a1d1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webtourismus/tailwindcss-cli/zipball/853e44cbbc4c6356d02e73f732dd6f15d856a1d1",
-                "reference": "853e44cbbc4c6356d02e73f732dd6f15d856a1d1",
-                "shasum": ""
-            },
-            "bin": [
-                "bin/tailwindcss"
-            ],
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Standalone binary CLI executable of Tailwind CSS for Linux x64 systems. Patched version including postcss-import and postcss-nested.",
-            "homepage": "https://tailwindcss.com/blog/standalone-cli",
-            "support": {
-                "issues": "https://github.com/webtourismus/tailwindcss-cli/issues",
-                "source": "https://github.com/webtourismus/tailwindcss-cli/tree/v3.3.2"
-            },
-            "time": "2023-05-10T15:22:28+00:00"
         }
     ],
     "packages-dev": [],
