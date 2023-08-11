@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.task.field_deadline
     - field.field.node.task.field_description
     - field.field.node.task.field_ref_project
+    - field.field.node.task.field_ref_status
     - field.field.node.task.field_ref_tags
     - node.type.task
   module:
@@ -32,6 +33,16 @@ content:
   field_ref_project:
     type: entity_reference_autocomplete
     weight: 28
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ref_status:
+    type: entity_reference_autocomplete
+    weight: 30
     region: content
     settings:
       match_operator: CONTAINS

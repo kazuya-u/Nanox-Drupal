@@ -1,0 +1,8 @@
+uuid: 8fb1b0e8-5e48-462e-baca-cf5ee2a3eb94
+langcode: ja
+status: true
+dependencies: {  }
+name: ステータス
+vid: status
+description: タスクのステータス管理に使用。
+weight: 0

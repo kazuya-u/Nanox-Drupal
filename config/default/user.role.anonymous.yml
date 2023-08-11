@@ -7,6 +7,7 @@ dependencies:
     - node.type.event
     - node.type.page
     - node.type.task
+    - taxonomy.vocabulary.tags
   module:
     - consumers
     - contact
@@ -31,6 +32,7 @@ permissions:
   - 'administer rest resources'
   - 'create article content'
   - 'create task content'
+  - 'create terms in tags'
   - 'delete any task content'
   - 'delete own consumer entities'
   - 'delete own task content'
