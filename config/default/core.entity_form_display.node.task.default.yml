@@ -18,13 +18,13 @@ mode: default
 content:
   field_deadline:
     type: datetime_default
-    weight: 26
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   field_description:
     type: string_textarea
-    weight: 27
+    weight: 3
     region: content
     settings:
       rows: 5
@@ -32,7 +32,7 @@ content:
     third_party_settings: {  }
   field_ref_project:
     type: entity_reference_autocomplete
-    weight: 28
+    weight: 1
     region: content
     settings:
       match_operator: CONTAINS
@@ -42,7 +42,7 @@ content:
     third_party_settings: {  }
   field_ref_status:
     type: entity_reference_autocomplete
-    weight: 30
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS
@@ -52,7 +52,7 @@ content:
     third_party_settings: {  }
   field_ref_tags:
     type: entity_reference_autocomplete
-    weight: 29
+    weight: 2
     region: content
     settings:
       match_operator: CONTAINS
