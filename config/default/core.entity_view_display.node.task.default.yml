@@ -10,7 +10,7 @@ dependencies:
     - field.field.node.task.field_ref_tags
     - node.type.task
   module:
-    - smart_date
+    - datetime
     - user
 id: node.task.default
 targetEntityType: node
@@ -18,59 +18,45 @@ bundle: task
 mode: default
 content:
   field_deadline:
-    type: smartdate_default
+    type: datetime_default
     label: above
     settings:
       timezone_override: ''
       format_type: medium
-      format: y_m_d_h_i
-      force_chronological: false
-      add_classes: false
-      time_wrapper: false
-      localize: false
-      parts:
-        start: start
-        end: '0'
-        duration: '0'
-      duration:
-        separator: ' | '
-        unit: ''
-        decimals: 2
-        suffix: h
     third_party_settings: {  }
     weight: 4
-    region: ds_content
+    region: content
   field_description:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 0
     region: content
   field_ref_project:
     type: entity_reference_label
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
-    weight: 3
-    region: ds_content
+    weight: 1
+    region: content
   field_ref_status:
     type: entity_reference_label
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
-    weight: 6
+    weight: 3
     region: content
   field_ref_tags:
     type: entity_reference_label
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 2
-    region: ds_content
+    region: content
 hidden:
   langcode: true
   links: true
