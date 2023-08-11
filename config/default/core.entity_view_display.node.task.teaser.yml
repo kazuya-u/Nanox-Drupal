@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.task.field_deadline
     - field.field.node.task.field_description
     - field.field.node.task.field_ref_project
+    - field.field.node.task.field_ref_status
     - field.field.node.task.field_ref_tags
     - node.type.task
   module:
@@ -25,5 +26,6 @@ hidden:
   field_deadline: true
   field_description: true
   field_ref_project: true
+  field_ref_status: true
   field_ref_tags: true
   langcode: true

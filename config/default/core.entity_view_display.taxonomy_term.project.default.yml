@@ -1,0 +1,31 @@
+uuid: 1012be0b-640d-4816-9d66-dc2646ca7728
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.project.field_machine_name
+    - taxonomy.vocabulary.project
+  module:
+    - text
+id: taxonomy_term.project.default
+targetEntityType: taxonomy_term
+bundle: project
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_machine_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
