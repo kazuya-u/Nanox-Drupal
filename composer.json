@@ -25,6 +25,8 @@
         "drupal/core-composer-scaffold": "10.1.1",
         "drupal/core-project-message": "10.1.1",
         "drupal/core-recommended": "10.1.1",
+        "drupal/devel": "^5.0",
+        "drupal/devel_kint_extras": "^1.1",
         "drupal/entity_reference_revisions": "^1.10",
         "drupal/form_options_attributes": "^2.0",
         "drupal/hal": "^2.0",
