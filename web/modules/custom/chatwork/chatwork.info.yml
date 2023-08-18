@@ -1,0 +1,5 @@
+name: 'chatwork'
+type: module
+description: 'Provides integration with chatwork.'
+package: Custom
+core_version_requirement: ^10
