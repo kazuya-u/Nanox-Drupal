@@ -1,0 +1,9 @@
+work_status_form.form:
+  path: "/work/status"
+  defaults:
+    _title: "出勤する"
+    _form: "\\Drupal\\chatwork\\Form\\BeginningForm"
+  requirements:
+    _permission: 'access content'
+  options:
+    _admin_route: true
