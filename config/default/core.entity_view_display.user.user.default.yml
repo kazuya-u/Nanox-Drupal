@@ -3,8 +3,11 @@ langcode: ja
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_chatwork_api_room_id
+    - field.field.user.user.field_chatwork_api_token
     - field.field.user.user.field_tag
   module:
+    - key_value_field
     - user
 _core:
   default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
@@ -13,6 +16,22 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_chatwork_api_room_id:
+    type: key_value
+    label: above
+    settings:
+      value_only: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_chatwork_api_token:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
   field_tag:
     type: entity_reference_label
     label: above

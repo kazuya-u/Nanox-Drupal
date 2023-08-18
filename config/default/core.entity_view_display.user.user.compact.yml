@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_chatwork_api_room_id
+    - field.field.user.user.field_chatwork_api_token
     - field.field.user.user.field_tag
   module:
     - user
@@ -15,6 +17,8 @@ bundle: user
 mode: compact
 content: {  }
 hidden:
+  field_chatwork_api_room_id: true
+  field_chatwork_api_token: true
   field_tag: true
   langcode: true
   member_for: true
