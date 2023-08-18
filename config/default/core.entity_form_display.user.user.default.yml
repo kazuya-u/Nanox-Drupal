@@ -3,8 +3,11 @@ langcode: ja
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_chatwork_api_room_id
+    - field.field.user.user.field_chatwork_api_token
     - field.field.user.user.field_tag
   module:
+    - key_value_field
     - user
 _core:
   default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
@@ -22,6 +25,30 @@ content:
     weight: 5
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_chatwork_api_room_id:
+    type: key_value_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+      key_label: キー
+      value_label: 値
+      description_label: 説明
+      description_rows: 5
+      key_size: 60
+      key_placeholder: ''
+      description_enabled: true
+      description_placeholder: ''
+    third_party_settings: {  }
+  field_chatwork_api_token:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_tag:
     type: entity_reference_autocomplete

@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.user.select_tag
+    - field.field.user.user.field_chatwork_api_room_id
+    - field.field.user.user.field_chatwork_api_token
     - field.field.user.user.field_tag
   module:
     - user
@@ -23,6 +25,8 @@ content:
 hidden:
   account: true
   contact: true
+  field_chatwork_api_room_id: true
+  field_chatwork_api_token: true
   langcode: true
   language: true
   timezone: true
