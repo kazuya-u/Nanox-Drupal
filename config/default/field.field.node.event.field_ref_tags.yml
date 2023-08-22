@@ -1,19 +1,19 @@
-uuid: 0472cf1a-9d8e-4f91-aece-c7b4181803f6
+uuid: a130fb70-9001-42ed-87c5-745b199e2633
 langcode: ja
 status: true
 dependencies:
   config:
-    - field.storage.node.field_tags
+    - field.storage.node.field_ref_tags
     - node.type.event
     - taxonomy.vocabulary.tags
-id: node.event.field_tags
-field_name: field_tags
+id: node.event.field_ref_tags
+field_name: field_ref_tags
 entity_type: node
 bundle: event
 label: Tags
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -24,6 +24,6 @@ settings:
     sort:
       field: name
       direction: asc
-    auto_create: false
+    auto_create: true
     auto_create_bundle: ''
 field_type: entity_reference

@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.tips.field_description
     - field.field.node.tips.field_ref_project
-    - field.field.node.tips.field_tags
+    - field.field.node.tips.field_ref_tags
     - node.type.tips
   module:
     - user
@@ -29,13 +29,13 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
-  field_tags:
+  field_ref_tags:
     type: entity_reference_label
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
-    weight: 102
+    weight: 2
     region: content
   links:
     settings: {  }

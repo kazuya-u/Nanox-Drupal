@@ -1,19 +1,19 @@
-uuid: 68e1ec42-b5a2-4c4f-a3d5-83cce862b2bc
+uuid: 88855d43-cf77-4de2-b23c-4c56ce1dbe98
 langcode: ja
 status: true
 dependencies:
   config:
-    - field.storage.node.field_tags
+    - field.storage.node.field_ref_tags
     - node.type.tips
     - taxonomy.vocabulary.tags
-id: node.tips.field_tags
-field_name: field_tags
+id: node.tips.field_ref_tags
+field_name: field_ref_tags
 entity_type: node
 bundle: tips
 label: Tags
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
