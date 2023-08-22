@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.tips.field_description
     - field.field.node.tips.field_ref_project
     - field.field.node.tips.field_tags
     - node.type.tips
@@ -20,6 +21,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_description: true
   field_ref_project: true
   field_tags: true
   langcode: true

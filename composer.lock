@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0d09ca843a2ebdf5e4c2c75fb76135d",
+    "content-hash": "581b65348e3d6b9df8d5ba126f07d9a9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2673,6 +2673,54 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/memcache",
                 "issues": "https://www.drupal.org/project/issues/memcache"
+            }
+        },
+        {
+            "name": "drupal/rest_api_authentication",
+            "version": "2.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/rest_api_authentication.git",
+                "reference": "2.0.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/rest_api_authentication-2.0.10.zip",
+                "reference": "2.0.10",
+                "shasum": "43dd2b75f68b66a888a53a39068c6d86dd3d2c7f"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.10",
+                    "datestamp": "1686205648",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "arsh244",
+                    "homepage": "https://www.drupal.org/user/3619504"
+                },
+                {
+                    "name": "gauravsood91",
+                    "homepage": "https://www.drupal.org/user/3288491"
+                }
+            ],
+            "description": "Drupal API Authentication module secures unauthorized access to your Drupal site APIs using different API authentication methods.",
+            "homepage": "https://www.drupal.org/project/rest_api_authentication",
+            "support": {
+                "source": "https://git.drupalcode.org/project/rest_api_authentication"
             }
         },
         {
