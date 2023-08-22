@@ -4,8 +4,6 @@ status: true
 dependencies:
   config:
     - filter.format.rich_text
-    - node.type.article
-    - node.type.page
     - taxonomy.vocabulary.tags
   module:
     - contextual
@@ -31,17 +29,9 @@ permissions:
   - 'access toolbar'
   - 'access tour'
   - 'administer url aliases'
-  - 'create article content'
-  - 'create page content'
   - 'create terms in tags'
   - 'create url aliases'
-  - 'delete article revisions'
-  - 'delete own article content'
   - 'delete own files'
-  - 'delete own page content'
-  - 'delete page revisions'
-  - 'edit own article content'
-  - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
   - 'use text format rich_text'

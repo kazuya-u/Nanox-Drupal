@@ -3,10 +3,8 @@ langcode: ja
 status: true
 dependencies:
   config:
-    - node.type.article
     - node.type.event
     - node.type.note
-    - node.type.page
     - node.type.task
     - taxonomy.vocabulary.tags
   module:
@@ -31,7 +29,6 @@ permissions:
   - 'administer consumer entities'
   - 'administer nodes'
   - 'administer rest resources'
-  - 'create article content'
   - 'create note content'
   - 'create task content'
   - 'create terms in tags'
@@ -41,7 +38,6 @@ permissions:
   - 'delete own consumer entities'
   - 'delete own note content'
   - 'delete own task content'
-  - 'delete page revisions'
   - 'delete task revisions'
   - 'edit any event content'
   - 'edit any note content'
