@@ -1,20 +1,20 @@
-uuid: 47696a1a-35b7-4a2b-9812-2b62f47a47f0
+uuid: 969df9d4-1083-4033-8370-8033d90e9632
 langcode: ja
 status: true
 dependencies:
   config:
-    - node.type.tips
-id: node.tips.promote
-field_name: promote
+    - node.type.note
+id: node.note.status
+field_name: status
 entity_type: node
-bundle: tips
-label: フロントページへ掲載
+bundle: note
+label: 掲載
 description: ''
 required: false
 translatable: true
 default_value:
   -
-    value: 0
+    value: 1
 default_value_callback: ''
 settings:
   on_label: オン

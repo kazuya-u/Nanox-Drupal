@@ -1,16 +1,16 @@
-uuid: 88855d43-cf77-4de2-b23c-4c56ce1dbe98
+uuid: 1c5b52f2-d624-49d2-955e-a6181abc6894
 langcode: ja
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ref_tags
-    - node.type.tips
-    - taxonomy.vocabulary.tags
-id: node.tips.field_ref_tags
-field_name: field_ref_tags
+    - field.storage.node.field_ref_project
+    - node.type.note
+    - taxonomy.vocabulary.project
+id: node.note.field_ref_project
+field_name: field_ref_project
 entity_type: node
-bundle: tips
-label: Tags
+bundle: note
+label: Project
 description: ''
 required: false
 translatable: false
@@ -20,10 +20,10 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      tags: tags
+      project: project
     sort:
       field: name
       direction: asc
-    auto_create: true
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference
