@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.event.field_interval
     - field.field.node.event.field_ref_project
-    - field.field.node.event.field_tags
+    - field.field.node.event.field_ref_tags
     - node.type.event
   module:
     - smart_date
@@ -42,9 +42,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_tags:
+  field_ref_tags:
     type: entity_reference_autocomplete
-    weight: 28
+    weight: 2
     region: content
     settings:
       match_operator: CONTAINS

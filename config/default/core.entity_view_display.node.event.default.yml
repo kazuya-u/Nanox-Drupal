@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.event.field_interval
     - field.field.node.event.field_ref_project
-    - field.field.node.event.field_tags
+    - field.field.node.event.field_ref_tags
     - node.type.event
   module:
     - smart_date
@@ -46,14 +46,14 @@ content:
     third_party_settings: {  }
     weight: 1
     region: ds_content
-  field_tags:
+  field_ref_tags:
     type: entity_reference_label
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 2
-    region: ds_content
+    region: content
 hidden:
   langcode: true
   links: true
