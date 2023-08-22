@@ -3,6 +3,7 @@ langcode: ja
 status: true
 dependencies:
   config:
+    - field.field.node.tips.field_description
     - field.field.node.tips.field_ref_project
     - field.field.node.tips.field_tags
     - node.type.tips
@@ -13,6 +14,13 @@ targetEntityType: node
 bundle: tips
 mode: default
 content:
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_ref_project:
     type: entity_reference_label
     label: above
