@@ -1,14 +1,14 @@
-uuid: 60c033af-3282-4427-a9eb-642a0e1a82b4
+uuid: 08c12995-c1e5-4883-b83d-3865c575a53f
 langcode: ja
 status: true
 dependencies:
   config:
     - field.storage.node.field_description
-    - node.type.tips
-id: node.tips.field_description
+    - node.type.note
+id: node.note.field_description
 field_name: field_description
 entity_type: node
-bundle: tips
+bundle: note
 label: Description
 description: ''
 required: false

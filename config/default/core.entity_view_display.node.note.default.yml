@@ -1,17 +1,17 @@
-uuid: 1607a8c7-0d93-4fc4-a536-d19f1e45d103
+uuid: 60571ec0-2968-4e09-af25-49d5959d19d4
 langcode: ja
 status: true
 dependencies:
   config:
-    - field.field.node.tips.field_description
-    - field.field.node.tips.field_ref_project
-    - field.field.node.tips.field_ref_tags
-    - node.type.tips
+    - field.field.node.note.field_description
+    - field.field.node.note.field_ref_project
+    - field.field.node.note.field_ref_tags
+    - node.type.note
   module:
     - user
-id: node.tips.default
+id: node.note.default
 targetEntityType: node
-bundle: tips
+bundle: note
 mode: default
 content:
   field_description:
@@ -27,8 +27,8 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 101
-    region: content
+    weight: 1
+    region: ds_content
   field_ref_tags:
     type: entity_reference_label
     label: above

@@ -1,22 +1,22 @@
-uuid: 193ecd2c-58e0-4843-847a-527faead2a66
+uuid: b2a8d448-8f13-4dc9-9454-5e850d7240af
 langcode: ja
 status: true
 dependencies:
   config:
-    - field.field.node.tips.field_description
-    - field.field.node.tips.field_ref_project
-    - field.field.node.tips.field_ref_tags
-    - node.type.tips
+    - field.field.node.note.field_description
+    - field.field.node.note.field_ref_project
+    - field.field.node.note.field_ref_tags
+    - node.type.note
   module:
     - path
-id: node.tips.default
+id: node.note.default
 targetEntityType: node
-bundle: tips
+bundle: note
 mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -30,7 +30,7 @@ content:
     third_party_settings: {  }
   field_ref_project:
     type: entity_reference_autocomplete
-    weight: 26
+    weight: 29
     region: content
     settings:
       match_operator: CONTAINS
@@ -50,41 +50,41 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 3
+    weight: 2
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 6
+    weight: 15
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 9
+    weight: 120
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 7
+    weight: 16
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
@@ -92,7 +92,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS
