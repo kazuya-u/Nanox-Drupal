@@ -8,9 +8,6 @@ dependencies:
     - node.type.task
     - taxonomy.vocabulary.tags
   module:
-    - contact
-    - contextual
-    - file
     - filter
     - node
     - path
@@ -31,10 +28,7 @@ permissions:
   - 'access administration pages'
   - 'access content'
   - 'access content overview'
-  - 'access contextual links'
-  - 'access files overview'
   - 'access shortcuts'
-  - 'access site-wide contact form'
   - 'access toolbar'
   - 'access tour'
   - 'administer nodes'
@@ -44,7 +38,6 @@ permissions:
   - 'create terms in tags'
   - 'create url aliases'
   - 'delete any task content'
-  - 'delete own files'
   - 'delete own task content'
   - 'delete task revisions'
   - 'edit any event content'
