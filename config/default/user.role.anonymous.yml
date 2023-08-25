@@ -8,11 +8,10 @@ dependencies:
     - node.type.task
     - taxonomy.vocabulary.tags
   module:
-    - consumers
-    - contact
     - node
     - rest
     - search
+    - simple_oauth
     - system
     - taxonomy
 _core:
@@ -23,20 +22,19 @@ weight: 0
 is_admin: false
 permissions:
   - 'access content'
-  - 'access site-wide contact form'
   - 'access taxonomy overview'
-  - 'add consumer entities'
-  - 'administer consumer entities'
+  - 'add simple_oauth entities'
   - 'administer nodes'
   - 'administer rest resources'
-  - 'create note content'
+  - 'administer simple_oauth entities'
   - 'create task content'
   - 'create terms in tags'
+  - 'debug simple_oauth tokens'
   - 'delete any note content'
   - 'delete any task content'
   - 'delete note revisions'
-  - 'delete own consumer entities'
   - 'delete own note content'
+  - 'delete own simple_oauth entities'
   - 'delete own task content'
   - 'delete task revisions'
   - 'edit any event content'
@@ -45,11 +43,12 @@ permissions:
   - 'edit own event content'
   - 'edit own note content'
   - 'edit own task content'
+  - 'grant simple_oauth codes'
   - 'revert note revisions'
   - 'revert task revisions'
   - 'search content'
-  - 'update own consumer entities'
+  - 'update own simple_oauth entities'
   - 'view note revisions'
-  - 'view own consumer entities'
+  - 'view own simple_oauth entities'
   - 'view own unpublished content'
   - 'view task revisions'
