@@ -1,0 +1,14 @@
+uuid: 7d1c87cf-1238-49a7-b622-964649af9ec9
+langcode: ja
+status: true
+dependencies:
+  config:
+    - user.role.application
+  module:
+    - user
+id: user_add_role_action.application
+label: 選択したユーザーにApplicationの役割を追加
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: application

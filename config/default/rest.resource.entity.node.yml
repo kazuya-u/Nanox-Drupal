@@ -3,11 +3,9 @@ langcode: ja
 status: true
 dependencies:
   module:
-    - basic_auth
     - hal
     - node
     - serialization
-    - simple_oauth
     - user
 id: entity.node
 plugin_id: 'entity:node'
@@ -18,33 +16,25 @@ configuration:
       - hal_json
       - json
     supported_auth:
-      - basic_auth
-      - oauth2
-      - cookie
+      2: cookie
   POST:
     supported_formats:
       - hal_json
       - json
       - xml
     supported_auth:
-      - basic_auth
-      - oauth2
-      - cookie
+      2: cookie
   DELETE:
     supported_formats:
       - hal_json
       - json
       - xml
     supported_auth:
-      - basic_auth
-      - oauth2
-      - cookie
+      2: cookie
   PATCH:
     supported_formats:
       - hal_json
       - json
       - xml
     supported_auth:
-      - basic_auth
-      - oauth2
-      - cookie
+      2: cookie

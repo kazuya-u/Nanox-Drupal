@@ -1,0 +1,23 @@
+uuid: aee30df4-17a5-4ac9-b84c-126cb0c4a822
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.event
+    - node.type.note
+  module:
+    - node
+    - system
+id: application
+label: Application
+weight: -7
+is_admin: null
+permissions:
+  - 'access content'
+  - 'create note content'
+  - 'delete any note content'
+  - 'delete own note content'
+  - 'edit any event content'
+  - 'edit any note content'
+  - 'edit own note content'
+  - 'view own unpublished content'
