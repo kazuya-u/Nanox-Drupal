@@ -1,0 +1,14 @@
+uuid: d2c1cd7d-0c96-4e48-9f49-88b15b50b6ed
+langcode: ja
+status: true
+dependencies:
+  config:
+    - user.role.application
+  module:
+    - user
+id: user_remove_role_action.application
+label: '選択したユーザーから Application の役割を削除'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: application

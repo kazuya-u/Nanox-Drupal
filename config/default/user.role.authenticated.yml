@@ -17,21 +17,16 @@ dependencies:
     - system
     - taxonomy
     - toolbar
-    - tour
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
 label: 認証済みユーザー
-weight: 1
+weight: -9
 is_admin: false
 permissions:
   - 'access administration pages'
-  - 'access content'
-  - 'access content overview'
   - 'access shortcuts'
   - 'access toolbar'
-  - 'access tour'
-  - 'administer nodes'
   - 'administer rest resources'
   - 'administer url aliases'
   - 'create task content'
@@ -39,17 +34,11 @@ permissions:
   - 'create url aliases'
   - 'delete any task content'
   - 'delete own task content'
-  - 'delete task revisions'
-  - 'edit any event content'
   - 'edit any task content'
   - 'edit own event content'
   - 'edit own task content'
   - 'edit terms in tags'
-  - 'revert all revisions'
-  - 'revert task revisions'
   - 'search content'
   - 'use text format rich_text'
-  - 'view all revisions'
-  - 'view own unpublished content'
   - 'view task revisions'
   - 'view the administration theme'
