@@ -5,9 +5,11 @@ dependencies:
   config:
     - node.type.event
     - node.type.note
+    - taxonomy.vocabulary.status
   module:
     - node
     - system
+    - taxonomy
 id: application
 label: Application
 weight: -7
@@ -17,7 +19,9 @@ permissions:
   - 'create note content'
   - 'delete any note content'
   - 'delete own note content'
+  - 'delete terms in status'
   - 'edit any event content'
   - 'edit any note content'
   - 'edit own note content'
+  - 'edit terms in status'
   - 'view own unpublished content'
