@@ -6,7 +6,7 @@ dependencies:
     - core.entity_view_mode.user.compact
     - field.field.user.user.field_chatwork_api_room_id
     - field.field.user.user.field_chatwork_api_token
-    - field.field.user.user.field_tag
+    - field.field.user.user.field_toggl_api_token
   module:
     - user
 _core:
@@ -19,6 +19,6 @@ content: {  }
 hidden:
   field_chatwork_api_room_id: true
   field_chatwork_api_token: true
-  field_tag: true
+  field_toggl_api_token: true
   langcode: true
   member_for: true

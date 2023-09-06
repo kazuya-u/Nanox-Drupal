@@ -6,7 +6,7 @@ dependencies:
     - core.entity_form_mode.user.select_tag
     - field.field.user.user.field_chatwork_api_room_id
     - field.field.user.user.field_chatwork_api_token
-    - field.field.user.user.field_tag
+    - field.field.user.user.field_toggl_api_token
   module:
     - user
 _core:
@@ -15,18 +15,13 @@ id: user.user.select_tag
 targetEntityType: user
 bundle: user
 mode: select_tag
-content:
-  field_tag:
-    type: options_buttons
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
+content: {  }
 hidden:
   account: true
   contact: true
   field_chatwork_api_room_id: true
   field_chatwork_api_token: true
+  field_toggl_api_token: true
   langcode: true
   language: true
   timezone: true

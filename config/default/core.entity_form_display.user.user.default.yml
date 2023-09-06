@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.user.user.field_chatwork_api_room_id
     - field.field.user.user.field_chatwork_api_token
-    - field.field.user.user.field_tag
+    - field.field.user.user.field_toggl_api_token
   module:
     - key_value_field
     - user
@@ -50,13 +50,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_tag:
-    type: entity_reference_autocomplete
-    weight: 7
+  field_toggl_api_token:
+    type: string_textfield
+    weight: 10
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
