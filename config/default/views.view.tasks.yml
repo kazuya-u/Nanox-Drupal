@@ -711,7 +711,7 @@ display:
           group_type: group
           admin_label: 'field_ref_project: タクソノミーターム'
           plugin_id: standard
-          required: true
+          required: false
         field_ref_tags:
           id: field_ref_tags
           table: node__field_ref_tags
