@@ -10,10 +10,8 @@ dependencies:
   module:
     - filter
     - node
-    - path
     - rest
     - search
-    - shortcut
     - system
     - taxonomy
     - toolbar
@@ -25,20 +23,15 @@ weight: -9
 is_admin: false
 permissions:
   - 'access administration pages'
-  - 'access shortcuts'
   - 'access toolbar'
   - 'administer rest resources'
-  - 'administer url aliases'
   - 'create task content'
   - 'create terms in tags'
-  - 'create url aliases'
   - 'delete any task content'
   - 'delete own task content'
   - 'edit any task content'
   - 'edit own event content'
-  - 'edit own task content'
   - 'edit terms in tags'
   - 'search content'
   - 'use text format rich_text'
-  - 'view task revisions'
   - 'view the administration theme'

@@ -1,0 +1,15 @@
+uuid: b8db460b-a718-494d-96b4-624da248d56f
+langcode: ja
+status: true
+dependencies:
+  config:
+    - flag.flag.trash_can
+  module:
+    - flag
+id: flag_action.trash_can_unflag
+label: 戻す
+type: node
+plugin: 'flag_action:trash_can_unflag'
+configuration:
+  flag_id: trash_can
+  flag_action: unflag
