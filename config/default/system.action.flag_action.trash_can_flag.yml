@@ -1,0 +1,15 @@
+uuid: 8dee27e2-3943-4cb2-aa03-cae66b2572da
+langcode: ja
+status: true
+dependencies:
+  config:
+    - flag.flag.trash_can
+  module:
+    - flag
+id: flag_action.trash_can_flag
+label: ゴミ箱
+type: node
+plugin: 'flag_action:trash_can_flag'
+configuration:
+  flag_id: trash_can
+  flag_action: flag

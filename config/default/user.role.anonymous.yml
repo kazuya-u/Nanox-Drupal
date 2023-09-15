@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - node.type.event
-    - node.type.note
     - node.type.task
     - taxonomy.vocabulary.tags
   module:
@@ -27,7 +26,4 @@ permissions:
   - 'delete own task content'
   - 'edit any task content'
   - 'edit own event content'
-  - 'edit own task content'
   - 'search content'
-  - 'view note revisions'
-  - 'view task revisions'

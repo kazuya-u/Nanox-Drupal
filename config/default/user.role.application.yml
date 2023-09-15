@@ -5,17 +5,16 @@ dependencies:
   config:
     - node.type.event
     - node.type.note
+    - node.type.task
     - taxonomy.vocabulary.status
   module:
     - node
-    - system
     - taxonomy
 id: application
 label: Application
 weight: -7
 is_admin: null
 permissions:
-  - 'access content'
   - 'create note content'
   - 'delete any note content'
   - 'delete own note content'
@@ -23,5 +22,6 @@ permissions:
   - 'edit any event content'
   - 'edit any note content'
   - 'edit own note content'
+  - 'edit own task content'
   - 'edit terms in status'
   - 'view own unpublished content'
