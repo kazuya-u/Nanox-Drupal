@@ -9,6 +9,7 @@ dependencies:
     - taxonomy.vocabulary.status
     - taxonomy.vocabulary.tags
   module:
+    - eck
     - node
     - system
     - taxonomy
@@ -21,14 +22,18 @@ permissions:
   - 'access taxonomy overview'
   - 'create note content'
   - 'create terms in tags'
+  - 'create uc entities'
   - 'delete any note content'
   - 'delete own note content'
+  - 'delete own uc entities'
   - 'delete terms in status'
   - 'delete terms in tags'
   - 'edit any event content'
   - 'edit any note content'
   - 'edit own note content'
   - 'edit own task content'
+  - 'edit own uc entities'
   - 'edit terms in status'
   - 'edit terms in tags'
+  - 'view own uc entities'
   - 'view own unpublished content'

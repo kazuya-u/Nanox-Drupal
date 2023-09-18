@@ -1,0 +1,9 @@
+uuid: 9d7bed1a-1237-4392-8304-8af2d2d7c7ea
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.uc
+name: プロジェクト
+type: project
+description: ''
