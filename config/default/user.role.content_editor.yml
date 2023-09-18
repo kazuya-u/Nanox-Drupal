@@ -4,11 +4,9 @@ status: true
 dependencies:
   config:
     - filter.format.rich_text
-    - taxonomy.vocabulary.tags
   module:
     - filter
     - system
-    - taxonomy
     - toolbar
 _core:
   default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
@@ -19,7 +17,5 @@ is_admin: false
 permissions:
   - 'access administration pages'
   - 'access toolbar'
-  - 'create terms in tags'
-  - 'edit terms in tags'
   - 'use text format rich_text'
   - 'view the administration theme'

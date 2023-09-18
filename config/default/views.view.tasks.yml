@@ -7,6 +7,7 @@ dependencies:
     - field.storage.node.field_description
     - field.storage.node.field_ref_status
     - node.type.task
+    - taxonomy.vocabulary.project
     - user.role.administrator
     - user.role.application
   module:
@@ -625,7 +626,7 @@ display:
             operator: field_machine_name_value_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: project
+            identifier: project022
             required: false
             remember: false
             multiple: false
@@ -633,6 +634,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               content_editor: '0'
+              application: '0'
               administrator: '0'
             placeholder: ''
           is_grouped: false
@@ -689,6 +691,55 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        field_ref_project_target_id:
+          id: field_ref_project_target_id
+          table: node__field_ref_project
+          field: field_ref_project_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_ref_project_target_id_op
+            label: ''
+            description: ''
+            use_operator: false
+            operator: field_ref_project_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: project
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              application: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: project
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
       style:
         type: serializer
       row:
@@ -737,6 +788,7 @@ display:
         - request_format
         - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.roles
       tags:
@@ -788,6 +840,7 @@ display:
         - 'languages:language_interface'
         - request_format
         - url
+        - user
         - 'user.node_grants:view'
         - user.roles
       tags:
