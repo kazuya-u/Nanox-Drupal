@@ -1,0 +1,10 @@
+uuid: 2425dd1e-2f51-432b-94b3-5e453c1a74fd
+langcode: ja
+status: false
+dependencies: {  }
+id: contents
+label: 'Contents '
+uid: true
+created: true
+changed: false
+title: true

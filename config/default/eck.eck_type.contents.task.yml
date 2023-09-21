@@ -1,0 +1,9 @@
+uuid: ef035ae2-f35f-44b6-a7c2-8b2049b65f0a
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.contents
+name: Task
+type: task
+description: ''

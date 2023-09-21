@@ -1,0 +1,10 @@
+uuid: ebd3f0e2-50d9-4e77-9edf-c2348cd3b3ee
+langcode: ja
+status: false
+dependencies: {  }
+id: uc
+label: "User's Category"
+uid: true
+created: false
+changed: false
+title: true

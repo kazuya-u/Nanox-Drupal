@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.note.field_description
     - field.field.node.note.field_ref_project
-    - field.field.node.note.field_ref_tags
+    - field.field.node.note.field_ref_tag
     - node.type.note
   module:
     - path
@@ -30,7 +30,7 @@ content:
     third_party_settings: {  }
   field_ref_project:
     type: entity_reference_autocomplete
-    weight: 29
+    weight: 121
     region: content
     settings:
       match_operator: CONTAINS
@@ -38,9 +38,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_ref_tags:
+  field_ref_tag:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 122
     region: content
     settings:
       match_operator: CONTAINS

@@ -5,12 +5,10 @@ dependencies:
   config:
     - node.type.event
     - node.type.task
-    - taxonomy.vocabulary.tags
   module:
     - node
     - rest
     - search
-    - taxonomy
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
 id: anonymous
@@ -18,10 +16,8 @@ label: 匿名ユーザー
 weight: -10
 is_admin: false
 permissions:
-  - 'access taxonomy overview'
   - 'administer rest resources'
   - 'create task content'
-  - 'create terms in tags'
   - 'delete any task content'
   - 'delete own task content'
   - 'edit any task content'

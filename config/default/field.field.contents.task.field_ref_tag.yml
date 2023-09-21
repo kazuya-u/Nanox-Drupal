@@ -1,16 +1,16 @@
-uuid: 2ea38a93-c5c2-408d-a0d0-836cc4568c59
+uuid: 241e6829-c5fa-407d-adca-b878b23b4a7e
 langcode: ja
 status: true
 dependencies:
   config:
-    - eck.eck_type.uc.project
-    - field.storage.node.field_ref_project
-    - node.type.task
-id: node.task.field_ref_project
-field_name: field_ref_project
-entity_type: node
+    - eck.eck_type.contents.task
+    - eck.eck_type.uc.tag
+    - field.storage.contents.field_ref_tag
+id: contents.task.field_ref_tag
+field_name: field_ref_tag
+entity_type: contents
 bundle: task
-label: プロジェクト
+label: Tag
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:uc'
   handler_settings:
     target_bundles:
-      project: project
+      tag: tag
     sort:
       field: _none
       direction: ASC

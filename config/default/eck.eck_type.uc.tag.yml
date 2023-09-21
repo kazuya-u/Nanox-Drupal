@@ -1,0 +1,9 @@
+uuid: 1fedfd8a-f956-4ec7-8d75-5703dfe362ea
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.uc
+name: タグ
+type: tag
+description: ''

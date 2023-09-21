@@ -4,8 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.event.field_interval
-    - field.field.node.event.field_ref_project
-    - field.field.node.event.field_ref_tags
     - node.type.event
   module:
     - smart_date
@@ -38,21 +36,10 @@ content:
     third_party_settings: {  }
     weight: 3
     region: ds_content
-  field_ref_project:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
+  flag_trash_can:
+    settings: {  }
     third_party_settings: {  }
-    weight: 1
-    region: ds_content
-  field_ref_tags:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 2
+    weight: 10
     region: content
 hidden:
   langcode: true

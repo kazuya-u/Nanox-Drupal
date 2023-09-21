@@ -1,0 +1,19 @@
+uuid: 57702cda-4f29-46c8-bf9d-0c0529beb8f9
+langcode: ja
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: contents.field_description
+field_name: field_description
+entity_type: contents
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

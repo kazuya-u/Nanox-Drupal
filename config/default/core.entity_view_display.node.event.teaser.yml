@@ -5,8 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.event.field_interval
-    - field.field.node.event.field_ref_project
-    - field.field.node.event.field_ref_tags
     - node.type.event
   module:
     - user
@@ -15,6 +13,11 @@ targetEntityType: node
 bundle: event
 mode: teaser
 content:
+  flag_trash_can:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -22,6 +25,4 @@ content:
     region: content
 hidden:
   field_interval: true
-  field_ref_project: true
-  field_ref_tags: true
   langcode: true

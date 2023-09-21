@@ -1,29 +1,29 @@
-uuid: 603880d2-5eb5-47a2-892f-ad86d5eccfd1
+uuid: 95851d65-dca5-48b2-a602-795b7c1f4cba
 langcode: ja
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ref_project
-    - node.type.event
-    - taxonomy.vocabulary.project
-id: node.event.field_ref_project
+    - eck.eck_type.contents.task
+    - eck.eck_type.uc.project
+    - field.storage.contents.field_ref_project
+id: contents.task.field_ref_project
 field_name: field_ref_project
-entity_type: node
-bundle: event
+entity_type: contents
+bundle: task
 label: Project
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:uc'
   handler_settings:
     target_bundles:
       project: project
     sort:
-      field: name
-      direction: asc
+      field: _none
+      direction: ASC
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

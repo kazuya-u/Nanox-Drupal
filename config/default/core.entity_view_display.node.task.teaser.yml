@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.task.field_description
     - field.field.node.task.field_ref_project
     - field.field.node.task.field_ref_status
-    - field.field.node.task.field_ref_tags
+    - field.field.node.task.field_ref_tag
     - node.type.task
   module:
     - user
@@ -17,6 +17,11 @@ targetEntityType: node
 bundle: task
 mode: teaser
 content:
+  flag_trash_can:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -27,5 +32,5 @@ hidden:
   field_description: true
   field_ref_project: true
   field_ref_status: true
-  field_ref_tags: true
+  field_ref_tag: true
   langcode: true

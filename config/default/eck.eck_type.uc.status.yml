@@ -1,0 +1,9 @@
+uuid: ab95bbc2-d0f7-48af-afca-1601621160ad
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.uc
+name: ステータス
+type: status
+description: ''

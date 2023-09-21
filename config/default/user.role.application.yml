@@ -7,21 +7,37 @@ dependencies:
     - node.type.note
     - node.type.task
     - taxonomy.vocabulary.status
+    - taxonomy.vocabulary.tags
   module:
+    - eck
     - node
+    - system
     - taxonomy
 id: application
 label: Application
 weight: -7
 is_admin: null
 permissions:
+  - 'access content'
+  - 'access taxonomy overview'
+  - 'create contents entities'
   - 'create note content'
+  - 'create terms in tags'
+  - 'create uc entities'
   - 'delete any note content'
+  - 'delete own contents entities'
   - 'delete own note content'
+  - 'delete own uc entities'
   - 'delete terms in status'
+  - 'delete terms in tags'
   - 'edit any event content'
   - 'edit any note content'
+  - 'edit own contents entities'
   - 'edit own note content'
   - 'edit own task content'
+  - 'edit own uc entities'
   - 'edit terms in status'
+  - 'edit terms in tags'
+  - 'view own contents entities'
+  - 'view own uc entities'
   - 'view own unpublished content'

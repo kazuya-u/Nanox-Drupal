@@ -6,14 +6,12 @@ dependencies:
     - filter.format.rich_text
     - node.type.event
     - node.type.task
-    - taxonomy.vocabulary.tags
   module:
     - filter
     - node
     - rest
     - search
     - system
-    - taxonomy
     - toolbar
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
@@ -26,12 +24,10 @@ permissions:
   - 'access toolbar'
   - 'administer rest resources'
   - 'create task content'
-  - 'create terms in tags'
   - 'delete any task content'
   - 'delete own task content'
   - 'edit any task content'
   - 'edit own event content'
-  - 'edit terms in tags'
   - 'search content'
   - 'use text format rich_text'
   - 'view the administration theme'

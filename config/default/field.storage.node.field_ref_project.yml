@@ -1,16 +1,16 @@
-uuid: 543aceb1-147e-4732-834f-9f9db8021e31
+uuid: f94beba3-97dd-45db-bb35-059d72506da2
 langcode: ja
 status: true
 dependencies:
   module:
+    - eck
     - node
-    - taxonomy
 id: node.field_ref_project
 field_name: field_ref_project
 entity_type: node
 type: entity_reference
 settings:
-  target_type: taxonomy_term
+  target_type: uc
 module: core
 locked: false
 cardinality: 1
