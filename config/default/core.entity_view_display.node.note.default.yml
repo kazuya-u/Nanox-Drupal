@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.note.field_description
     - field.field.node.note.field_ref_project
-    - field.field.node.note.field_ref_tags
+    - field.field.node.note.field_ref_tag
     - node.type.note
   module:
     - user
@@ -27,15 +27,20 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 1
-    region: ds_content
-  field_ref_tags:
+    weight: 101
+    region: content
+  field_ref_tag:
     type: entity_reference_label
     label: above
     settings:
-      link: false
+      link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 102
+    region: content
+  flag_trash_can:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
     region: content
   links:
     settings: {  }

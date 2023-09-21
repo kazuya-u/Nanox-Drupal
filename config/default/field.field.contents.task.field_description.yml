@@ -1,0 +1,24 @@
+uuid: 03168615-9dd8-43eb-929a-7c05047fb69a
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_type.contents.task
+    - field.storage.contents.field_description
+    - filter.format.plain_text
+  module:
+    - text
+id: contents.task.field_description
+field_name: field_description
+entity_type: contents
+bundle: task
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - plain_text
+field_type: text_long

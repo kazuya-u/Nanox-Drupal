@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.task.field_description
     - field.field.node.task.field_ref_project
     - field.field.node.task.field_ref_status
-    - field.field.node.task.field_ref_tags
+    - field.field.node.task.field_ref_tag
     - node.type.task
   module:
     - datetime
@@ -37,25 +37,30 @@ content:
     type: entity_reference_label
     label: above
     settings:
-      link: false
+      link: true
     third_party_settings: {  }
-    weight: 1
+    weight: 101
     region: content
   field_ref_status:
     type: entity_reference_label
     label: above
     settings:
-      link: false
+      link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 102
     region: content
-  field_ref_tags:
+  field_ref_tag:
     type: entity_reference_label
     label: above
     settings:
-      link: false
+      link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 102
+    region: content
+  flag_trash_can:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
     region: content
 hidden:
   langcode: true

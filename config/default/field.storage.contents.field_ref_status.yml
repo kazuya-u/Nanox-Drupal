@@ -1,13 +1,12 @@
-uuid: ff17a764-ef5d-4225-b837-f068a668260e
+uuid: e4f66111-2458-4d2c-97f6-8c724c2ca2cd
 langcode: ja
 status: true
 dependencies:
   module:
     - eck
-    - node
-id: node.field_ref_status
+id: contents.field_ref_status
 field_name: field_ref_status
-entity_type: node
+entity_type: contents
 type: entity_reference
 settings:
   target_type: uc

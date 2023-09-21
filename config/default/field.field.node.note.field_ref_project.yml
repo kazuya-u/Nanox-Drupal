@@ -1,29 +1,29 @@
-uuid: 1c5b52f2-d624-49d2-955e-a6181abc6894
+uuid: 8c0dbab4-91e8-4bd0-8576-73df0c111c69
 langcode: ja
 status: true
 dependencies:
   config:
+    - eck.eck_type.uc.project
     - field.storage.node.field_ref_project
     - node.type.note
-    - taxonomy.vocabulary.project
 id: node.note.field_ref_project
 field_name: field_ref_project
 entity_type: node
 bundle: note
-label: Project
+label: プロジェクト
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:uc'
   handler_settings:
     target_bundles:
       project: project
     sort:
-      field: name
-      direction: asc
+      field: _none
+      direction: ASC
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

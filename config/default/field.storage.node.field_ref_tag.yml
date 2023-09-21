@@ -1,19 +1,19 @@
-uuid: ff17a764-ef5d-4225-b837-f068a668260e
+uuid: 24605b65-698f-4293-b251-7713d4563667
 langcode: ja
 status: true
 dependencies:
   module:
     - eck
     - node
-id: node.field_ref_status
-field_name: field_ref_status
+id: node.field_ref_tag
+field_name: field_ref_tag
 entity_type: node
 type: entity_reference
 settings:
   target_type: uc
 module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
