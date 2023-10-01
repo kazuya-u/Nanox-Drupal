@@ -1,0 +1,19 @@
+uuid: c350de8a-fdcc-4296-84e0-7b5b31489863
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_type.us.us
+    - field.storage.us.field_chatwork_api_token
+id: us.us.field_chatwork_api_token
+field_name: field_chatwork_api_token
+entity_type: us
+bundle: us
+label: 'Chatwork API Token'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

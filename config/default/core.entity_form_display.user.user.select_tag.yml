@@ -6,6 +6,8 @@ dependencies:
     - core.entity_form_mode.user.select_tag
     - field.field.user.user.field_chatwork_api_room_id
     - field.field.user.user.field_chatwork_api_token
+    - field.field.user.user.field_pokemon_number
+    - field.field.user.user.field_ref_us
     - field.field.user.user.field_toggl_api_token
   module:
     - user
@@ -21,6 +23,8 @@ hidden:
   contact: true
   field_chatwork_api_room_id: true
   field_chatwork_api_token: true
+  field_pokemon_number: true
+  field_ref_us: true
   field_toggl_api_token: true
   langcode: true
   language: true

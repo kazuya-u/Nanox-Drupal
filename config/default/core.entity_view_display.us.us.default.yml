@@ -1,21 +1,20 @@
-uuid: 6a25c501-7207-4e59-aade-9f39aca25e52
+uuid: 99111ed8-3000-4bb2-87d9-19bf11205d01
 langcode: ja
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_chatwork_api_room_id
-    - field.field.user.user.field_chatwork_api_token
-    - field.field.user.user.field_pokemon_number
-    - field.field.user.user.field_ref_us
-    - field.field.user.user.field_toggl_api_token
+    - eck.eck_type.us.us
+    - field.field.us.us.field_chatwork_api_room_id
+    - field.field.us.us.field_chatwork_api_token
+    - field.field.us.us.field_pokemon_number
+    - field.field.us.us.field_toggl_api_token
+    - field.field.us.us.field_username
   module:
     - key_value_field
     - user
-_core:
-  default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
-id: user.user.default
-targetEntityType: user
-bundle: user
+id: us.us.default
+targetEntityType: us
+bundle: us
 mode: default
 content:
   field_chatwork_api_room_id:
@@ -24,7 +23,7 @@ content:
     settings:
       value_only: false
     third_party_settings: {  }
-    weight: 8
+    weight: 3
     region: content
   field_chatwork_api_token:
     type: string
@@ -32,7 +31,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 7
+    weight: 0
     region: content
   field_pokemon_number:
     type: string
@@ -40,15 +39,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 10
-    region: content
-  field_ref_us:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 11
+    weight: 1
     region: content
   field_toggl_api_token:
     type: string
@@ -56,10 +47,22 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 9
+    weight: 2
     region: content
-  member_for:
-    weight: 5
+  field_username:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  uid:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   langcode: true
