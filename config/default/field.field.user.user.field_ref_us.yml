@@ -1,0 +1,30 @@
+uuid: bfcc2932-5487-43ec-9bea-291b6367be48
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_type.us.us
+    - field.storage.user.field_ref_us
+  module:
+    - user
+id: user.user.field_ref_us
+field_name: field_ref_us
+entity_type: user
+bundle: user
+label: 'Ref Settings'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:us'
+  handler_settings:
+    target_bundles:
+      us: us
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

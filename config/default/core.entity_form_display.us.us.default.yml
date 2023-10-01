@@ -1,36 +1,24 @@
-uuid: 4d8e5cfe-74ad-4657-95c3-c6afcfdcf888
+uuid: ab58aae2-cb5f-47c2-b932-c944d6d25e33
 langcode: ja
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_chatwork_api_room_id
-    - field.field.user.user.field_chatwork_api_token
-    - field.field.user.user.field_pokemon_number
-    - field.field.user.user.field_ref_us
-    - field.field.user.user.field_toggl_api_token
+    - eck.eck_type.us.us
+    - field.field.us.us.field_chatwork_api_room_id
+    - field.field.us.us.field_chatwork_api_token
+    - field.field.us.us.field_pokemon_number
+    - field.field.us.us.field_toggl_api_token
+    - field.field.us.us.field_username
   module:
     - key_value_field
-    - user
-_core:
-  default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
-id: user.user.default
-targetEntityType: user
-bundle: user
+id: us.us.default
+targetEntityType: us
+bundle: us
 mode: default
 content:
-  account:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  contact:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_chatwork_api_room_id:
     type: key_value_textfield
-    weight: 5
+    weight: 6
     region: content
     settings:
       size: 60
@@ -46,7 +34,7 @@ content:
     third_party_settings: {  }
   field_chatwork_api_token:
     type: string_textfield
-    weight: 4
+    weight: 3
     region: content
     settings:
       size: 60
@@ -54,15 +42,38 @@ content:
     third_party_settings: {  }
   field_pokemon_number:
     type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_toggl_api_token:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_username:
+    type: string_textfield
     weight: 7
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_ref_us:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS
@@ -70,23 +81,4 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_toggl_api_token:
-    type: string_textfield
-    weight: 6
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  language:
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  timezone:
-    weight: 6
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden:
-  langcode: true
+hidden: {  }

@@ -1,0 +1,10 @@
+uuid: 595e2d39-8d0f-40d8-96b0-bd0dd59efe4b
+langcode: ja
+status: false
+dependencies: {  }
+id: us
+label: "User's Settings"
+uid: true
+created: false
+changed: false
+title: false

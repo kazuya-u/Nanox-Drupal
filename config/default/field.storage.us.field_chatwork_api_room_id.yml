@@ -1,0 +1,24 @@
+uuid: 009e9d4b-9f66-4f3c-aafa-21734b654454
+langcode: ja
+status: true
+dependencies:
+  module:
+    - eck
+    - key_value_field
+id: us.field_chatwork_api_room_id
+field_name: field_chatwork_api_room_id
+entity_type: us
+type: key_value
+settings:
+  key_max_length: 255
+  key_is_ascii: false
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: key_value_field
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

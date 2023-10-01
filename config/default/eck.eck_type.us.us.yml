@@ -1,0 +1,9 @@
+uuid: b48f5f8f-0f1f-4cc1-ac57-e9ac399fdc1e
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.us
+name: "User's Settings"
+type: us
+description: ''

@@ -1,0 +1,19 @@
+uuid: 03ecd5ec-90d8-43ae-a8e3-14f11380f6e6
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_type.us.us
+    - field.storage.us.field_pokemon_number
+id: us.us.field_pokemon_number
+field_name: field_pokemon_number
+entity_type: us
+bundle: us
+label: 'Pokemon Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

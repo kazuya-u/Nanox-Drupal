@@ -1,0 +1,21 @@
+uuid: 7fd46372-5008-45d9-9af6-19cc7c61cd86
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_type.us.us
+    - field.storage.us.field_chatwork_api_room_id
+  module:
+    - key_value_field
+id: us.us.field_chatwork_api_room_id
+field_name: field_chatwork_api_room_id
+entity_type: us
+bundle: us
+label: 'Chatwork API Room ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: key_value
