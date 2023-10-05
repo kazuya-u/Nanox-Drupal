@@ -1,0 +1,19 @@
+uuid: 0f3ecf64-1622-4791-84d8-c25be8565b58
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_type.us.us
+    - field.storage.us.field_slack_channel_id
+id: us.us.field_slack_channel_id
+field_name: field_slack_channel_id
+entity_type: us
+bundle: us
+label: 'Slack Chanel ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

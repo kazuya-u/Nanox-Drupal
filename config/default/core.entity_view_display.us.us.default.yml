@@ -7,6 +7,8 @@ dependencies:
     - field.field.us.us.field_chatwork_api_room_id
     - field.field.us.us.field_chatwork_api_token
     - field.field.us.us.field_pokemon_number
+    - field.field.us.us.field_slack_app_token
+    - field.field.us.us.field_slack_channel_id
     - field.field.us.us.field_toggl_api_token
     - field.field.us.us.field_username
   module:
@@ -40,6 +42,22 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_slack_app_token:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_slack_channel_id:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
     region: content
   field_toggl_api_token:
     type: string
