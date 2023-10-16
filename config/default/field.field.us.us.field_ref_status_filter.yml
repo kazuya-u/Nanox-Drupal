@@ -1,0 +1,29 @@
+uuid: 49a8d960-ed12-4e44-b2e6-f7b65c8272ac
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_type.uc.status
+    - eck.eck_type.us.us
+    - field.storage.us.field_ref_status_filter
+id: us.us.field_ref_status_filter
+field_name: field_ref_status_filter
+entity_type: us
+bundle: us
+label: フロントページのステータスフィルター
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:uc'
+  handler_settings:
+    target_bundles:
+      status: status
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
