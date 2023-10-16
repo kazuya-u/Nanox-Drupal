@@ -7,6 +7,7 @@ dependencies:
     - field.field.us.us.field_chatwork_api_room_id
     - field.field.us.us.field_chatwork_api_token
     - field.field.us.us.field_pokemon_number
+    - field.field.us.us.field_ref_status_filter
     - field.field.us.us.field_slack_app_token
     - field.field.us.us.field_slack_channel_id
     - field.field.us.us.field_toggl_api_token
@@ -47,6 +48,16 @@ content:
     weight: 4
     region: content
     settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ref_status_filter:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }

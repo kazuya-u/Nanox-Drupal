@@ -1,0 +1,19 @@
+uuid: 8b5b9743-39e5-4184-ab1f-078bbccfa67e
+langcode: ja
+status: true
+dependencies:
+  module:
+    - eck
+id: us.field_ref_status_filter
+field_name: field_ref_status_filter
+entity_type: us
+type: entity_reference
+settings:
+  target_type: uc
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
