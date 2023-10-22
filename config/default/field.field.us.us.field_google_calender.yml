@@ -1,0 +1,21 @@
+uuid: 770fdcde-d1c3-4ba9-b085-3190b92d0e14
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_type.us.us
+    - field.storage.us.field_google_calender
+  module:
+    - key_value_field
+id: us.us.field_google_calender
+field_name: field_google_calender
+entity_type: us
+bundle: us
+label: 'Google Calender'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: key_value
