@@ -36,11 +36,6 @@ function pokemon_api_us_presave(EckEntityInterface $entity) {
     return;
   }
 
-  if (!($file_system_service->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY))) {
-    // Failed to prepare directory.
-    return;
-  }
-
   if (($file_system_service->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY))
     && ($pokemon_json_data = Utility::getPokemonData($pokemon_number))
     && ($pokemon_data = json_decode($pokemon_json_data))
