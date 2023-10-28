@@ -6,6 +6,7 @@ dependencies:
     - eck.eck_type.us.us
     - field.field.us.us.field_chatwork_api_room_id
     - field.field.us.us.field_chatwork_api_token
+    - field.field.us.us.field_google_calender
     - field.field.us.us.field_pokemon_number
     - field.field.us.us.field_ref_status_filter
     - field.field.us.us.field_slack_app_token
@@ -35,6 +36,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_google_calender:
+    type: key_value
+    label: above
+    settings:
+      value_only: false
+    third_party_settings: {  }
+    weight: 8
     region: content
   field_pokemon_number:
     type: string
