@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ */
+
+use Drupal\Core\File\FileSystemInterface;
+use Drupal\pokemon_api\Utils\Utility;
+
+/**
+ * Implements hook_install().
+ */
+function pokemon_api_install() {
+  /**
+   * @var Drupal\Core\File\FileSystem
+   */
+  $file_system_service = \Drupal::service('file_system');
+  $directory = Utility::POKEMON_DIRECTORY;
+  $file_system_service->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY);
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function pokemon_api_uninstall() {
+  /**
+   * @var Drupal\Core\File\FileSystem
+   */
+  $file_system_service = \Drupal::service('file_system');
+  $directory = Utility::POKEMON_DIRECTORY;
+  $file_system_service->deleteRecursive($directory);
+}

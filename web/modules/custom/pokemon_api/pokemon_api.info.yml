@@ -1,0 +1,5 @@
+name: 'Pokemon API'
+type: module
+description: 'Provide pokemon api cache.'
+package: Custom
+core_version_requirement: ^10
