@@ -19,7 +19,7 @@ class Utility {
    *
    * @var string
    */
-  const POKEMON_DIRECTORY = 'private://api/pokemon';
+  const POKEMON_DIRECTORY = DRUPAL_ROOT . '/sites/default/files/api/pokemon';
 
   /**
    * The Target api endpoint.
