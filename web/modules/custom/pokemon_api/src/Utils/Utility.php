@@ -12,6 +12,13 @@ class Utility {
    *
    * @var string
    */
+  const POKEMON_MAX_NUMBER = 1010;
+
+  /**
+   * The Save Base Directory.
+   *
+   * @var string
+   */
   const POKEMON_DIRECTORY = 'private://api/pokemon';
 
   /**
@@ -37,17 +44,15 @@ class Utility {
    * Get request from "pokeapi".
    */
   public static function getPokemonData(string $pokemon_number): string|FALSE {
-    // Request.
-    $request_option = [
-      CURLOPT_URL => self::POKEMON_API_ENDPOINT . $pokemon_number,
-      CURLOPT_RETURNTRANSFER  => TRUE,
-    ];
-    $request_ch = curl_init();
-    curl_setopt_array($request_ch, $request_option);
-    if ($request_result = curl_exec($request_ch)) {
-      return $request_result;
+    $client = \Drupal::httpClient();
+    try {
+      $request = $client->get(self::POKEMON_API_ENDPOINT . $pokemon_number);
+      $response = $request->getBody();
+      return $response;
     }
-    curl_close($request_ch);
+    catch (\Throwable $th) {
+      // No script.
+    }
     return FALSE;
   }
 
