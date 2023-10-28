@@ -8,7 +8,7 @@ namespace Drupal\pokemon_api\Utils;
 class Utility {
 
   /**
-   * The Save Base Directory.
+   * The maximum number of Pokemon.
    *
    * @var string
    */
