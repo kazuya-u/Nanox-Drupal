@@ -1,0 +1,52 @@
+<?php
+
+/**
+ * @file
+ */
+
+use Drupal\Core\File\FileSystemInterface;
+use Drupal\eck\EckEntityInterface;
+use Drupal\pokemon_api\Utils\Utility;
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function pokemon_api_us_presave(EckEntityInterface $entity) {
+  // Target field name.
+  $target_field = 'field_pokemon_number';
+
+  // Get pokemon number.
+  if (!$entity->hasField($target_field)) {
+    return;
+  }
+  $pokemon_number = $entity->get($target_field)->getString();
+  if (!is_numeric($pokemon_number) || $pokemon_number < 1 || $pokemon_number > Utility::POKEMON_MAX_NUMBER) {
+    // Invalid Pokemon number.
+    return;
+  }
+
+  // Define the directory where data is to be stored.
+  $directory = Utility::POKEMON_DIRECTORY . '/' . sprintf('%04d', $pokemon_number);
+
+  /**
+   * @var Drupal\Core\File\FileSystem
+  */
+  $file_system_service = \Drupal::service('file_system');
+  if (file_exists($directory)) {
+    return;
+  }
+
+  if (($file_system_service->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY))
+    && ($pokemon_json_data = Utility::getPokemonData($pokemon_number))
+    && ($pokemon_data = json_decode($pokemon_json_data))
+    && ($sprites_data = $pokemon_data->sprites)
+  ) {
+    foreach (Utility::POKEMON_SPRITES as $sprite) {
+      if (!isset($sprites_data->$sprite)) {
+        // Missing sprite data.
+        continue;
+      }
+      $file_system_service->saveData($sprites_data->$sprite, $directory . '/' . $sprite . '.txt');
+    }
+  }
+}
