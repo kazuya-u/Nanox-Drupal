@@ -210,6 +210,7 @@ parameters:
     allowedHeaders: ['x-csrf-token','authorization','content-type','accept','origin','x-requested-with', 'access-control-allow-origin','x-allowed-header','*']
     # Specify allowed request methods, specify ['*'] to allow all possible ones.
     allowedMethods: ['*']
+    Access-Control-Allow-Origin: ['*']
     # Configure requests allowed from specific origins.
     allowedOrigins: ['http://localhost/','http://localhost:5173','http://localhost:5173','http://localhost:5173','*']
     # Sets the Access-Control-Expose-Headers header.
