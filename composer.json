@@ -37,6 +37,7 @@
         "drupal/key_value_field": "^1.3",
         "drupal/memcache": "^2.5",
         "drupal/restui": "^1.21",
+        "drupal/seckit": "^2.0",
         "drupal/simple_oauth": "^5.2",
         "drupal/smart_date": "^4.0",
         "drupal/token": "^1.11",
@@ -130,8 +131,7 @@
             },
             "drupal/simple_oauth": {
                 "https://www.drupal.org/project/simple_oauth/issues/2840205#comment-13317967": "https://www.drupal.org/files/issues/2023-03-13/3082984-reduce-logging-severitydont-25.patch",
-                "https://www.drupal.org/files/issues/2023-03-10/invalid-token-throws-o-auth-server-exception-3112225-5.patch": "https://www.drupal.org/files/issues/2023-03-10/invalid-token-throws-o-auth-server-exception-3112225-5.patch",
-                "https://www.drupal.org/project/simple_oauth/issues/2946882": "https://www.drupal.org/files/issues/2019-10-20/simple_oauth-auth-revoke-2946882-42.patch"
+                "https://www.drupal.org/files/issues/2023-03-10/invalid-token-throws-o-auth-server-exception-3112225-5.patch": "https://www.drupal.org/files/issues/2023-03-10/invalid-token-throws-o-auth-server-exception-3112225-5.patch"
             }
         }
     }
