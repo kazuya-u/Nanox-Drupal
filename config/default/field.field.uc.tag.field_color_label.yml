@@ -1,0 +1,21 @@
+uuid: 7264ee6c-2fc4-4f86-9c6c-683f05d752d6
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_type.uc.tag
+    - field.storage.uc.field_color_label
+  module:
+    - options
+id: uc.tag.field_color_label
+field_name: field_color_label
+entity_type: uc
+bundle: tag
+label: カラーラベル
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

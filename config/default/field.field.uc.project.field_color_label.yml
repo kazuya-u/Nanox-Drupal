@@ -1,0 +1,21 @@
+uuid: b34d20d1-cbe7-41fd-bdb0-3ef9e33f9d29
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_type.uc.project
+    - field.storage.uc.field_color_label
+  module:
+    - options
+id: uc.project.field_color_label
+field_name: field_color_label
+entity_type: uc
+bundle: project
+label: カラーラベル
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

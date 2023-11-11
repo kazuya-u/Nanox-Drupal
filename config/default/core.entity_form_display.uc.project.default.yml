@@ -1,0 +1,44 @@
+uuid: d616fb8a-85a8-4a56-96b9-f7420a115cf3
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_type.uc.project
+    - field.field.uc.project.field_color_label
+id: uc.project.default
+targetEntityType: uc
+bundle: project
+mode: default
+content:
+  field_color_label:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

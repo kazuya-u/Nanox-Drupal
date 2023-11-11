@@ -1,0 +1,39 @@
+uuid: 702eb4de-16b8-4688-98c9-cc7415423d2e
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_type.uc.tag
+    - field.field.uc.tag.field_color_label
+  module:
+    - options
+    - user
+id: uc.tag.default
+targetEntityType: uc
+bundle: tag
+mode: default
+content:
+  field_color_label:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+  uid:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,39 @@
+uuid: c2c1a3d4-cd42-4eb2-aef6-532a56794e18
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_type.uc.status
+    - field.field.uc.status.field_color_label
+  module:
+    - options
+    - user
+id: uc.status.default
+targetEntityType: uc
+bundle: status
+mode: default
+content:
+  field_color_label:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+  uid:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
