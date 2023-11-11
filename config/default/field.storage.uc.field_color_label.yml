@@ -1,0 +1,51 @@
+uuid: 8291035e-bdd9-480f-86e7-a2a9fb05e6b6
+langcode: ja
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: uc.field_color_label
+field_name: field_color_label
+entity_type: uc
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '#e3e2e080'
+      label: light_gray
+    -
+      value: '#e3e2e0'
+      label: gray
+    -
+      value: '#eee0da'
+      label: brown
+    -
+      value: '#fadec9'
+      label: orange
+    -
+      value: '#fdecc8'
+      label: yellow
+    -
+      value: '#dbeddb'
+      label: green
+    -
+      value: '#d3e5ef'
+      label: blue
+    -
+      value: '#e8deee'
+      label: perpule
+    -
+      value: '#f5e0e9'
+      label: pink
+    -
+      value: '#ffe2dd'
+      label: red
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

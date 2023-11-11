@@ -1,0 +1,39 @@
+uuid: 9254f7ca-cd81-4b64-8c87-c8c14e209d1a
+langcode: ja
+status: true
+dependencies:
+  config:
+    - eck.eck_type.uc.project
+    - field.field.uc.project.field_color_label
+  module:
+    - options
+    - user
+id: uc.project.default
+targetEntityType: uc
+bundle: project
+mode: default
+content:
+  field_color_label:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+  uid:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
