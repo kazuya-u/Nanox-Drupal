@@ -2,6 +2,8 @@
 
 namespace Drupal\pokemon_api\Utils;
 
+use GuzzleHttp\Psr7\Request;
+
 /**
  * The Utility for pokemon api.
  */
@@ -43,17 +45,49 @@ class Utility {
   /**
    * Get request from "pokeapi".
    */
-  public static function getPokemonData(string $pokemon_number): string|FALSE {
-    $client = \Drupal::httpClient();
+  public static function getPokemonSpritesData(string $pokemon_number): array|FALSE {
+    // Initialized.
+    $array = [];
+
+    // Set GuzzleHttp.
+    $http_client = \Drupal::httpClient();
+
+    // Exec.
     try {
-      $request = $client->get(self::POKEMON_API_ENDPOINT . $pokemon_number);
-      $response = $request->getBody();
-      return $response;
+      $data = $http_client
+        ->get(self::POKEMON_API_ENDPOINT . $pokemon_number)
+        ->getBody()
+        ->getContents();
+      if (($json_pokemon_data = json_decode($data))
+        && ($pokemon_sprites_data = $json_pokemon_data->sprites)
+      ) {
+        foreach (self::POKEMON_SPRITES as $sprite) {
+          if (empty($pokemon_sprites_data->$sprite)) {
+            // Missing sprite data.
+            continue;
+          }
+          $array[] = $pokemon_sprites_data->$sprite;
+        }
+      }
+      return $array;
     }
     catch (\Throwable $th) {
       // No script.
+      return FALSE;
     }
-    return FALSE;
+  }
+
+  /**
+   * Get request from "pokeapi".
+   */
+  public static function getPokemonPhotoData(array $urls, int $pokemon_number): bool {
+    $http_client = \Drupal::httpClient();
+    foreach ($urls as $i => $o) {
+      $request = new Request('GET', $o);
+      $http_client
+        ->send($request, ['sink' => self::POKEMON_DIRECTORY . '/' . sprintf('%04d', $pokemon_number) . '/' . self::POKEMON_SPRITES[$i] . '.png']);
+    }
+    return TRUE;
   }
 
 }

@@ -16,7 +16,14 @@ function pokemon_api_install() {
    */
   $file_system_service = \Drupal::service('file_system');
   $directory = Utility::POKEMON_DIRECTORY;
-  $file_system_service->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY);
+  // $file_system_service->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY);
+
+  for ($i = 1; $i <= 1000; $i++) {
+    $pokemon_directory = $directory . '/' . sprintf('%04d', $i);
+    if (!file_exists($pokemon_directory)) {
+      $file_system_service->prepareDirectory($pokemon_directory, FileSystemInterface::CREATE_DIRECTORY);
+    }
+  }
 }
 
 /**
