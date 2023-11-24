@@ -1,0 +1,10 @@
+uuid: e77d7015-0b47-4b11-ab30-f74a2feb1a54
+langcode: ja
+status: true
+dependencies:
+  module:
+    - eck
+id: uc.api_label_color
+label: 【JSONAPI】カラーラベル・タイトル
+targetEntityType: uc
+cache: true

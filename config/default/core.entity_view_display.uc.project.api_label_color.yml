@@ -1,0 +1,31 @@
+uuid: 4a493a31-2aa4-4433-bf82-805d93da99ee
+langcode: ja
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.uc.api_label_color
+    - eck.eck_type.uc.project
+    - field.field.uc.project.field_color_label
+  module:
+    - layout_builder
+    - options
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: uc.project.api_label_color
+targetEntityType: uc
+bundle: project
+mode: api_label_color
+content:
+  field_color_label:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  title: true
+  uid: true
