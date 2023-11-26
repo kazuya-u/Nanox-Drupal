@@ -2,8 +2,6 @@
 
 namespace Drupal\pokemon_api\Utils;
 
-use GuzzleHttp\Psr7\Request;
-
 /**
  * The Utility for pokemon api.
  */
@@ -83,9 +81,18 @@ class Utility {
   public static function getPokemonPhotoData(array $urls, int $pokemon_number): bool {
     $http_client = \Drupal::httpClient();
     foreach ($urls as $i => $o) {
-      $request = new Request('GET', $o);
-      $http_client
-        ->send($request, ['sink' => self::POKEMON_DIRECTORY . '/' . sprintf('%04d', $pokemon_number) . '/' . self::POKEMON_SPRITES[$i] . '.png']);
+      // Defined file path.
+      $file_path = self::POKEMON_DIRECTORY . '/' . sprintf('%04d', $pokemon_number) . '/' . self::POKEMON_SPRITES[$i] . '.png';
+
+      // Get image data.
+      $img_data = $http_client->get($o)
+        ->getBody()
+        ->getContents();
+      /**
+       * @var \Drupal\Core\File\FileSystem
+       */
+      $file_system_service = \Drupal::service('file_system');
+      $file_system_service->saveData($img_data, $file_path);
     }
     return TRUE;
   }

@@ -26,7 +26,7 @@ function pokemon_api_us_presave(EckEntityInterface $entity) {
   }
 
   // Define the file-path where data is to be stored.
-  $file_path = Utility::POKEMON_DIRECTORY . '/' . sprintf('%04d', $pokemon_number) . 'back_default.png';
+  $file_path = Utility::POKEMON_DIRECTORY . '/' . sprintf('%04d', $pokemon_number) . '/' . 'front_default.png';
 
   if (file_exists($file_path)) {
     return;
