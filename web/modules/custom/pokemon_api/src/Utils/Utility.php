@@ -2,6 +2,8 @@
 
 namespace Drupal\pokemon_api\Utils;
 
+use Drupal\Core\File\FileSystemInterface;
+
 /**
  * The Utility for pokemon api.
  */
@@ -82,17 +84,25 @@ class Utility {
     $http_client = \Drupal::httpClient();
     foreach ($urls as $i => $o) {
       // Defined file path.
-      $file_path = self::POKEMON_DIRECTORY . '/' . sprintf('%04d', $pokemon_number) . '/' . self::POKEMON_SPRITES[$i] . '.png';
-
-      // Get image data.
-      $img_data = $http_client->get($o)
-        ->getBody()
-        ->getContents();
+      $directory_path = self::POKEMON_DIRECTORY . '/' . sprintf('%04d', $pokemon_number);
       /**
        * @var \Drupal\Core\File\FileSystem
        */
       $file_system_service = \Drupal::service('file_system');
-      $file_system_service->saveData($img_data, $file_path);
+      // Ensure the directory exists.
+      if (!$file_system_service->prepareDirectory($directory_path, FileSystemInterface::CREATE_DIRECTORY)) {
+        // Log error or handle the directory creation failure.
+        return FALSE;
+      }
+      $file_path = $directory_path . '/' . self::POKEMON_SPRITES[$i] . '.png';
+      // Get image data.
+      $img_data = $http_client->get($o)
+        ->getBody()
+        ->getContents();
+      if ($file_system_service->saveData($img_data, $file_path) === FALSE) {
+        // Log error or handle the file save failure.
+        return FALSE;
+      }
     }
     return TRUE;
   }
