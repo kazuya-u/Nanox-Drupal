@@ -13,10 +13,8 @@ module:
   ckeditor5: 0
   config: 0
   consumers: 0
-  contact: 0
   contextual: 0
   datetime: 0
-  dblog: 0
   dynamic_page_cache: 0
   eck: 0
   editor: 0
@@ -27,7 +25,6 @@ module:
   filter: 0
   flag: 0
   hal: 0
-  help: 0
   history: 0
   image: 0
   jsonapi: 0
@@ -56,7 +53,6 @@ module:
   restui: 0
   search: 0
   serialization: 0
-  shortcut: 0
   simple_oauth: 0
   smart_date: 0
   system: 0
