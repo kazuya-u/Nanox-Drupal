@@ -6,5 +6,6 @@ dependencies:
     - user
 id: user.select_tag
 label: ' タグ選択'
+description: ''
 targetEntityType: user
 cache: true

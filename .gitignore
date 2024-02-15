@@ -131,11 +131,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# Dependency directories
-node_modules/
-jspm_packages/
-
-#### <CUSTOM_BASE_IGNORE_SET> ####
+### <CUSTOM_BASE_IGNORE_SET> ###
 # Ignoring the following files, assuming don't put sensitive information
 # in services.yml and settings.php.
 !/web/sites/*/*settings*.php
@@ -147,15 +143,18 @@ jspm_packages/
 # Ignore paths that may contain user-generated content
 /files-private
 /mount-files
+/tmp
 
 # Ignore drupal core (if not versioning drupal sources)
 /web/modules/contrib
 /web/profiles/contrib
 /web/themes/contrib
 /web/README.md
-#### </CUSTOM_BASE_IGNORE_SET> ####
+### </CUSTOM_BASE_IGNORE_SET> ###
+
+### <CUSTOM_IGNORE_SET/> ###
 
 # <LANDO>
-.lando.*
+.lando.*.*
 /tmp/*
 # </LANDO>
