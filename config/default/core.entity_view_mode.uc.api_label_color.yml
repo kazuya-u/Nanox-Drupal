@@ -6,5 +6,6 @@ dependencies:
     - eck
 id: uc.api_label_color
 label: 【JSONAPI】カラーラベル・タイトル
+description: ''
 targetEntityType: uc
 cache: true
