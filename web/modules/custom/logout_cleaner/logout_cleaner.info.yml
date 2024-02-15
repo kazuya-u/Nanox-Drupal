@@ -1,0 +1,5 @@
+name: 'LogoutCleaner'
+type: module
+description: 'Provides session data cleanup during the user logout process.'
+package: Custom
+core_version_requirement: ^10
