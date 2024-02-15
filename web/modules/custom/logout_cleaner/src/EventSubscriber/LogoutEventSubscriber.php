@@ -6,7 +6,9 @@ use Drupal\Core\Messenger\MessengerInterface;
 use Drupal\Core\Session\AccountProxyInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpKernel\Event\RequestEvent;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
 /**
@@ -14,6 +16,10 @@ use Symfony\Component\HttpKernel\KernelEvents;
  */
 class LogoutEventSubscriber implements EventSubscriberInterface {
 
+  /**
+   * The drupal account proxy.
+   */
+  protected AccountProxyInterface $currentUser;
 
   /**
    * The drupal messenger.
@@ -21,38 +27,44 @@ class LogoutEventSubscriber implements EventSubscriberInterface {
   protected MessengerInterface $messenger;
 
   /**
-   * The drupal account proxy.
+   * The session.
    */
-  protected AccountProxyInterface $currentUser;
+  protected SessionInterface $session;
 
   /**
    * Constructor.
    */
   public function __construct(
     AccountProxyInterface $current_user,
-    MessengerInterface $messenger
+    MessengerInterface $messenger,
+    SessionInterface $session,
   ) {
     $this->currentUser = $current_user;
     $this->messenger = $messenger;
+    $this->session = $session;
   }
 
   /**
    * {@inheritDoc}
    */
   public static function getSubscribedEvents() {
-    $events[KernelEvents::REQUEST][] = ['onLogout', 0];
+    $events[KernelEvents::RESPONSE][] = ['onLogout', 0];
     return $events;
   }
 
   /**
    * Purge session data.
    */
-  public function onLogout(RequestEvent $event) {
+  public function onLogout(ResponseEvent $event) {
     if (($request = $event->getRequest())
       && $request instanceof Request
       && '/user/logout' === $request->getPathInfo()
+      && ($response = $event->getResponse())
+      && $response instanceof Response
     ) {
-      $this->messenger->addMessage('ログアウト成功。');
+      $this->messenger->addMessage('ログアウトしました。');
+      $this->session->remove('uid');
+      $response->setContent('<script type="application/json">sessionStorage.clear();</script>');
     }
   }
 
