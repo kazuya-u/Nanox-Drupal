@@ -1,6 +1,5 @@
 services:
-  logout_cleaner.logout_event_subscriber:
-    class: Drupal\logout_cleaner\EventSubscriber\LogoutEventSubscriber
-    arguments: ["@current_user", "@messenger", "@session"]
+  logout_cleaner.route_subscriber:
+    class: "\\Drupal\\logout_cleaner\\Routing\\RouteSubscriber"
     tags:
       - { name: "event_subscriber" }
