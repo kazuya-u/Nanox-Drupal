@@ -48,6 +48,10 @@ class LogoutEventSubscriber implements EventSubscriberInterface {
    * {@inheritDoc}
    */
   public static function getSubscribedEvents() {
+    // Initialized.
+    $events = [];
+
+    // Register onLogout event.
     $events[KernelEvents::RESPONSE][] = ['onLogout', 0];
     return $events;
   }
@@ -62,9 +66,10 @@ class LogoutEventSubscriber implements EventSubscriberInterface {
       && ($response = $event->getResponse())
       && $response instanceof Response
     ) {
-      $this->messenger->addMessage('ログアウトしました。');
       $this->session->remove('uid');
-      $response->setContent('<script type="application/json">sessionStorage.clear();</script>');
+      // Set redirect.
+      $response->headers->set('X-Clear-SessionStorage', 'true');
+      $this->messenger->addMessage('ログアウトしました。');
     }
   }
 
