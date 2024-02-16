@@ -34,6 +34,7 @@ module:
   layout_discovery: 0
   link: 0
   locale: 0
+  logout_cleaner: 0
   memcache: 0
   memcache_admin: 0
   menu_link_content: 0
