@@ -1,0 +1,7 @@
+chatwork_api.chatwork:
+  path: '/chatwork-api/chatwork'
+  defaults:
+    _title: 'Chatwork'
+    _form: 'Drupal\chatwork_api\Form\ChatworkForm'
+  requirements:
+    _permission: 'access content'
