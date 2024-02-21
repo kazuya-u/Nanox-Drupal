@@ -1,0 +1,15 @@
+chatwork_api.chatwork:
+  path: '/chatwork-api/chatwork'
+  defaults:
+    _title: 'Chatwork'
+    _form: 'Drupal\chatwork_api\Form\ChatworkForm'
+  requirements:
+    _permission: 'access content'
+
+chatwork_api.confirm:
+  path: '/chatwork-api/confirm'
+  defaults:
+    _form: '\Drupal\chatwork_api\Form\ChatworkConfirmForm'
+    _title: '確認'
+  requirements:
+    _permission: 'access content'
