@@ -1,0 +1,4 @@
+services:
+  crud_service:
+    class: Drupal\crud_event\CRUDService
+    arguments: ['@event_dispatcher']

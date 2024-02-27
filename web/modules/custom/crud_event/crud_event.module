@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * This module holds functions for entity CRUD events.
+ */
+
+declare(strict_types=1);
+
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\crud_event\CRUDService;
+use Drupal\crud_event\Event\CRUDEvent;
+
+/**
+ * Implements hook_entity_insert().
+ *
+ * { @inheritdoc }
+ */
+function entity_crud_event_entity_insert(EntityInterface $entity) {
+  $event_type = CRUDService::CREATE;
+  _crud_event_dispatch($event_type, $entity);
+}
+
+/**
+ * Implements hook_entity_update().
+ *
+ * { @inheritdoc }
+ */
+function crud_event_entity_update(EntityInterface $entity) {
+  $event_type = CRUDService::UPDATE;
+  _crud_event_dispatch($event_type, $entity);
+}
+
+/**
+ * Implements hook_entity_presave().
+ *
+ * { @inheritdoc }
+ */
+function crud_event_entity_presave(EntityInterface $entity) {
+  $event_type = CRUDService::PRESAVE;
+  _crud_event_dispatch($event_type, $entity);
+}
+
+/**
+ * Helper function to dispatch an event.
+ *
+ * @param string $event_type
+ *   The event type which CRUD.
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ *   The entity to dispatch event.
+ */
+function _crud_event_dispatch($event_type, EntityInterface $entity) {
+
+  // The event.
+  $event = new CRUDEvent($event_type, $entity);
+
+  /**
+   * The EventDispatcher.
+   *
+   * @var \Symfony\Component\EventDispatcher\EventDispatcherInterface $dispatcher
+   */
+  $dispatcher = \Drupal::service('event_dispatcher');
+  $dispatcher->dispatch($event, $event_type);
+}
