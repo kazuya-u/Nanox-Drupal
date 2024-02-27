@@ -17,7 +17,7 @@ use Drupal\crud_event\Event\CRUDEvent;
  *
  * { @inheritdoc }
  */
-function entity_crud_event_entity_insert(EntityInterface $entity) {
+function crud_event_entity_insert(EntityInterface $entity) {
   $event_type = CRUDService::CREATE;
   _crud_event_dispatch($event_type, $entity);
 }

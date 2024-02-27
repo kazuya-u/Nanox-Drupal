@@ -73,7 +73,7 @@ final class CRUDService {
    * @param \Drupal\Core\Entity\EntityInterface $entity
    *   The entity to dispatch event.
    */
-  public function setEvent($event_type, EntityInterface $entity) {
+  public function dispatchEvent($event_type, EntityInterface $entity) {
 
     // The event.
     $event = new CRUDEvent($event_type, $entity);

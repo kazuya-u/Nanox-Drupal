@@ -4,12 +4,11 @@ namespace Drupal\crud_event\Event;
 
 use Drupal\Component\EventDispatcher\Event;
 use Drupal\Core\Entity\EntityInterface;
-use Drupal\crud_event\CRUDService;
 
 /**
  * Define the entity CRUD event.
  */
-class CRUDEvent extends Event {
+final class CRUDEvent extends Event {
 
   /**
    * The Entity.
@@ -19,7 +18,7 @@ class CRUDEvent extends Event {
   /**
    * The event type.
    */
-  protected CRUDService $eventType;
+  protected string $eventType;
 
   /**
    * Construct the CRUD event for target entity.
@@ -33,21 +32,27 @@ class CRUDEvent extends Event {
     string $event_type,
     EntityInterface $entity
   ) {
-    $this->entity = $entity;
     $this->eventType = $event_type;
+    $this->entity = $entity;
   }
 
   /**
    * Method to get the entity from the event.
+   *
+   * @return \Drupal\Core\Entity\EntityInterface
+   *   An entity object.
    */
-  public function getEntity() {
+  public function getEntity(): EntityInterface {
     return $this->entity;
   }
 
   /**
    * Method to get the event type.
+   *
+   * @return string
+   *   The CRUD type.
    */
-  public function getEventType() {
+  public function getEventType(): string {
     return $this->eventType;
   }
 

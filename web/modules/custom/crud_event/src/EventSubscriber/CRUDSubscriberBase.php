@@ -26,10 +26,16 @@ abstract class CRUDSubscriberBase implements EventSubscriberInterface {
   }
 
   /**
-   * Method called when entity CRUD.
+   * This method is called when a CRUD event occurs.
+   *
+   * Utilized to define specific logic for event subscribers during entity CRUD
+   * operations (create, read, update, delete, and pre-save). Subclasses must
+   * implement this abstract method to execute appropriate actions for CRUD
+   * events.
    *
    * @param \Drupal\crud_event\Event\CRUDEvent $crud_event
-   *   The event.
+   *   Event object with CRUD event details. It allows access to the operated
+   *   entity instances and event type (create, read, update, delete, pre-save).
    */
   abstract public function onEntityOperate(CRUDEvent $crud_event);
 
