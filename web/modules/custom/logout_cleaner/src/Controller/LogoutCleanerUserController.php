@@ -49,7 +49,7 @@ final class LogoutCleanerUserController extends UserController {
     foreach ($this->session->all() as $i => $o) {
       $this->session->remove($i);
     }
-    return $this->redirect('<front>');
+    return $this->redirect('user.login');
   }
 
 }

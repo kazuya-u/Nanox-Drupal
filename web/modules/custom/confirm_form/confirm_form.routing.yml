@@ -1,0 +1,7 @@
+confirm_form.sandbox_confirm:
+  path: '/confirm-form/sandbox-confirm'
+  defaults:
+    _title: 'Sandbox Confirm'
+    _form: 'Drupal\confirm_form\Form\SandboxConfirmForm'
+  requirements:
+    _permission: 'administer site configuration'
